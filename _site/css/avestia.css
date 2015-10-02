@@ -1,0 +1,1405 @@
+@charset "UTF-8";
+
+/* SpryValidationSelect.css - version 0.4 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+/* These are the classes applied on the messages
+ * (required message and invalid state message)
+ * which prevent them from being displayed by default.
+ */ 
+.selectRequiredMsg, .selectInvalidMsg {
+	display: none;
+}
+
+/* These selectors change the way messages look when the widget is in one of the error states (required, invalid).
+ * These classes set a default red border and color for the error text.
+ * The state class (.selectRequiredState or .selectInvalidState) is applied on the top-level container for the widget,
+ * and this way only the specific error message can be shown by setting the display property to "inline".
+ */
+.selectRequiredState .selectRequiredMsg,
+.selectInvalidState .selectInvalidMsg {
+	display: inline;
+	color: #FFF;
+}
+
+/* The next three group selectors control the way the core element (SELECT) looks like when the widget is in one of the states: 
+ * focus, required / invalid, valid 
+ * There are two selectors for each state, to cover the two main usecases for the widget:
+ * - the widget id is placed on the top level container for the SELECT
+ * - the widget id is placed on the SELECT element itself (there are no error messages)
+ */
+ 
+/* When the widget is in the valid state the SELECT has a green background applied on it. */
+.selectValidState select, select.selectValidState {
+	background-color: #454444;
+	  border: 0;
+}
+
+/* When the widget is in an invalid state the SELECT has a red background applied on it. */
+select.selectRequiredState, .selectRequiredState select,
+select.selectInvalidState, .selectInvalidState select {
+	background-color: #454444;
+	  border: 0;
+}
+
+/* When the widget has received focus, the SELECT has a yellow background applied on it. */
+.selectFocusState select, select.selectFocusState {
+	background-color: #FFF;
+}
+
+@charset "UTF-8";
+
+/* SpryValidationTextField.css - version 0.4 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+
+/* These are the classes applied on the error messages
+ * which prevent them from being displayed by default.
+ */ 
+.textfieldRequiredMsg, 
+.textfieldInvalidFormatMsg, 
+.textfieldMinValueMsg,
+.textfieldMaxValueMsg,
+.textfieldMinCharsMsg,
+.textfieldMaxCharsMsg,
+.textfieldValidMsg {
+	display: none;
+}
+
+/* These selectors change the way messages look when the widget is in one of the error states.
+ * These classes set a default red border and color for the error text.
+ * The state class (e.g. .textfieldRequiredState) is applied on the top-level container for the widget,
+ * and this way only the specific error message can be shown by setting the display property to "inline".
+ */
+.textfieldRequiredState .textfieldRequiredMsg, 
+.textfieldInvalidFormatState .textfieldInvalidFormatMsg, 
+.textfieldMinValueState .textfieldMinValueMsg,
+.textfieldMaxValueState .textfieldMaxValueMsg,
+.textfieldMinCharsState .textfieldMinCharsMsg,
+.textfieldMaxCharsState .textfieldMaxCharsMsg
+{
+	display: inline;
+	color: #FFF;
+}
+
+
+
+/* The next three group selectors control the way the core element (INPUT) looks like when the widget is in one of the states: * focus, required / invalid / minValue / maxValue / minChars / maxChars , valid 
+ * There are two selectors for each state, to cover the two main usecases for the widget:
+ * - the widget id is placed on the top level container for the INPUT
+ * - the widget id is placed on the INPUT element itself (there are no error messages)
+ */
+ 
+ /* When the widget is in the valid state the INPUT has a green background applied on it. */
+.textfieldValidState input, input.textfieldValidState {
+	background-color: #454444;
+	  border: 0;
+}
+
+/* When the widget is in an invalid state the INPUT has a red background applied on it. */
+input.textfieldRequiredState, .textfieldRequiredState input, 
+input.textfieldInvalidFormatState, .textfieldInvalidFormatState input, 
+input.textfieldMinValueState, .textfieldMinValueState input, 
+input.textfieldMaxValueState, .textfieldMaxValueState input, 
+input.textfieldMinCharsState, .textfieldMinCharsState input, 
+input.textfieldMaxCharsState, .textfieldMaxCharsState input {
+	background-color: #454444;
+	  border: 0;
+}
+
+/* When the widget has received focus, the INPUT has a yellow background applied on it. */
+.textfieldFocusState input, input.textfieldFocusState {
+	background-color: #FFF;
+}
+
+/* This class applies only for a short period of time and changes the way the text in the textbox looks like.
+ * It applies only when the widget has character masking enabled and the user tries to type in an invalid character.
+ */
+.textfieldFlashText input, input.textfieldFlashText {
+	color: red !important;
+}
+
+/* When the widget has the hint message on, the hint text can be styled differently than the user typed text. */
+.textfieldHintState input, input.textfieldHintState {
+	/*color: red !important;*/
+}
+
+@charset "UTF-8";
+/* SpryValidationConfirm.css - version 0.1 - Spry Pre-Release 1.6.1 */
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+
+/* These are the classes applied on the error messages
+ * which prevent them from being displayed by default.
+ */ 
+.confirmRequiredMsg, 
+.confirmInvalidMsg, 
+.confirmValidMsg {
+	display: none;
+}
+
+/* These selectors change the way messages look when the widget is in one of the error states.
+ * These classes set a default red border and color for the error text.
+ * The state class (e.g. .confirmRequiredState) is applied on the top-level container for the widget,
+ * and this way only the specific error message can be shown by setting the display property to "inline".
+ */
+.confirmRequiredState .confirmRequiredMsg,
+.confirmInvalidState .confirmInvalidMsg
+{
+	display: inline;
+	color: #52A091;
+}
+
+/* The next three group selectors control the way the core element (INPUT) looks like when the widget is in one of the states: * focus, required , invalid , valid 
+ * There are two selectors for each state, to cover the two main usecases for the widget:
+ * - the widget id is placed on the top level container for the INPUT
+ * - the widget id is placed on the INPUT element itself (there are no error messages)
+ */
+
+ /* When the widget is in the valid state the INPUT has a green background applied on it. */
+.confirmValidState input, input.confirmValidState {
+	background-color: #454444;
+	  border: 0;
+}
+
+/* When the widget is in an invalid state the INPUT has a red background applied on it. */
+input.confirmRequiredState, .confirmRequiredState input, 
+input.confirmInvalidState, .confirmInvalidState input
+{
+	background-color: #454444;
+	  border: 0;
+}
+
+/* When the widget has received focus, the INPUT has a yellow background applied on it. */
+.confirmFocusState input, input.confirmFocusState {
+	background-color: #FFF;
+}
+
+@charset "UTF-8";
+
+/* SpryValidationCheckbox.css - version 0.4 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. *//* These are the classes applied on the messages
+ * (required message, minSelections message and maxSelections message)
+ * which prevent them from being displayed by default.
+ */
+.checkboxRequiredMsg, .checkboxMinSelectionsMsg, .checkboxMaxSelectionsMsg{
+	display: none;
+}
+
+/* These selectors change the way messages look when the widget is in one of the error states.
+ * These classes set a default red border and font color for the error text.
+ * The state class (e.g. .checkboxRequiredState) is applied on the top-level container for the widget, 
+ * and this way only the specific error message can be shown by setting the display property to "inline".
+ */
+.checkboxRequiredState .checkboxRequiredMsg,
+.checkboxMinSelectionsState .checkboxMinSelectionsMsg,
+.checkboxMaxSelectionsState .checkboxMaxSelectionsMsg {
+	display: inline;
+	color: #52A091;
+}
+
+@charset "UTF-8";
+
+/* SpryFormValidation.css - version 0.5 - Spry Pre-Release 1.6.1 */
+
+/* Copyright (c) 2006. Adobe Systems Incorporated. All rights reserved. */
+
+
+
+/* These are the classes applied on the error messages
+ * which prevent them from being displayed by default.
+ */ 
+.textareaRequiredMsg,
+.textareaMinCharsMsg,
+.textareaMaxCharsMsg,
+.textareaValidMsg {
+	display:none;
+}
+
+/* These selectors change the way messages look when the widget is in one of the error states.
+ * These classes set a default red border and color for the error text.
+ * The state class (e.g. .textareaRequiredState) is applied on the top-level container for the widget,
+ * and this way only the specific error message can be shown by setting the display property to "inline".
+ */
+.textareaRequiredState .textareaRequiredMsg,
+.textareaMinCharsState .textareaMinCharsMsg,
+.textareaMaxCharsState .textareaMaxCharsMsg
+{
+	display: inline;
+	color: #FFF;
+}
+
+/* The next three group selectors control the way the core element (TEXTAREA) looks like when the widget is in one of the states: * focus, required / minChars / maxChars , valid 
+ * There are two selectors for each state, to cover the two main usecases for the widget:
+ * - the widget id is placed on the top level container for the TEXTAREA
+ * - the widget id is placed on the TEXTAREA element itself (there are no error messages)
+ */
+ 
+ /* When the widget is in the valid state the TEXTAREA has a green background applied on it. */
+.textareaValidState textarea, textarea.textareaValidState {
+	background-color: #454444;
+	border: 0;
+}
+
+/* When the widget is in an invalid state the TEXTAREA has a red background applied on it. */
+textarea.textareaRequiredState, .textareaRequiredState textarea, 
+textarea.textareaMinCharsState, .textareaMinCharsState textarea, 
+textarea.textareaMaxCharsState, .textareaMaxCharsState textarea {
+	background-color:#454444;
+	  border: 0;
+}
+
+/* When the widget has received focus, the TEXTAREA has a yellow background applied on it. */
+.textareaFocusState textarea, textarea.textareaFocusState {
+	background-color:#FFF;
+}
+
+/* This class applies only for a short period of time and changes the way the text in the textarea looks like.
+ * It applies only when the widget has enforce max chars enabled and the user tries to type some more.
+ */
+.textareaFlashState textarea, textarea.textareaFlashState{
+	color:red !important;
+}
+/* When the widget has the hint message on, the hint text can be styled differently than the user typed text. */
+textarea.textareaHintState, .textareaHintState textarea{
+	/* color: red !important;*/
+}
+
+-moz-viewport { width: device-width; scale: 1; }
+@-ms-viewport { width: device-width; scale: 1; }
+@-o-viewport { width: device-width; scale: 1; }
+@-webkit-viewport { width: device-width; scale: 1; }
+@viewport { width: device-width; scale: 1; }
+
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?uz62ew');
+	src:url('../fonts/icomoon.eot?#iefixuz62ew') format('embedded-opentype'),
+		url('../fonts/icomoon.woff?uz62ew') format('woff'),
+		url('../fonts/icomoon.ttf?uz62ew') format('truetype'),
+		url('../fonts/icomoon.svg?uz62ew#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+font-family: 'flexslider-icon';
+  src: url('../fonts/flexslider-icon.eot');
+  src: url('../fonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/flexslider-icon.woff') format('woff'), url('../fonts/flexslider-icon.ttf') format('truetype'), url('../fonts/flexslider-icon.svg#flexslider-icon') format('svg');
+}
+
+html {
+  font: normal 100%/1.4 'Merriweather', sans-serif;
+  background-color: #FFF;
+  overflow-x: hidden!important;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  overflow-x: hidden;
+	overflow: hidden/9;
+}
+
+.flex-logo {
+	width: 100%;
+	vertical-align: text-bottom;
+	max-width: 170px;
+	padding: 1em;
+	float: left;
+}
+
+.mobile {
+	display: block;
+}
+
+.desktop {
+	display: none;
+}
+
+/* BASE STYLES */
+.flex-img {
+	display: block;
+	width: 100%;
+}
+
+h1 {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 0.5em 0.5em 1em;
+    font-size: 1.25em!important;
+	margin: 0!important;
+	color: #47A4AD;
+}
+
+.subhead {
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 0 1em 1em;
+  font-size: 1em!important;
+  margin: 0;
+  color: #47A4AD;
+  letter-spacing: 4px;
+}
+
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin: 0;
+  color: #47A4AD;
+  line-height: initial;
+}
+
+h3 {
+font-family: 'Lato', sans-serif;
+text-transform: uppercase;
+font-size: 1.5em;
+margin: 0;
+color: #454444;
+}
+
+.body {
+font-family: 'Merriweather', serif;
+font-weight: 300;
+font-size: 1em;
+margin: 0;
+padding-bottom: 1em;
+text-align: justify;
+}
+
+.body:last-child {
+padding-bottom: 0;
+}
+
+.bold {
+font-family: 'Merriweather', serif;
+font-weight: 600;
+font-size: 1em;
+margin: 0;
+}
+
+.body-link {
+color: #47A4AD;
+text-decoration: none;
+transition: all 0.8s linear;
+}
+
+.body-link:hover {
+color: #454444;
+}
+
+/* HEADER & NAVIGATION */
+
+
+.bg {
+  background-color: #f6f6f6;
+  text-align: center;
+    padding: 125px 0 2em;
+}
+
+.bg-link {
+	border: 1px solid #454444;
+	padding: 0.5em;
+	color: #454444;
+	text-decoration: none;
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 1em;
+	display: block;
+	margin: 1em;
+	transition: all 0.8s ease;
+}
+
+.bg-link:hover {
+	background-color: #47A4AD;
+	border: 1px solid #47A4AD;
+	color: #FFF;
+}
+
+/* MOB MENU */
+#slide-menu h1 {
+	font-family: 'Lato', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	padding: 0.5em 0.5em 1em;
+  font-size: 1.5em!important;
+	margin: 0!important;
+	color: #FFF;
+}
+
+nav#slide-menu {
+	position: fixed;
+	top: 0;
+	right: -141px;
+	bottom: 0;
+	display: block;
+	float: left;
+	width: 100%;
+	max-width: 141px;
+	height: 100%;
+	  background-color: #454444;
+	overflow-x: hidden;
+overflow-y: scroll;
+  z-index: 99999;
+
+	-moz-transition: all 300ms;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+}
+	#slide-menu ul {
+		display: block;
+		margin: 0px;
+		padding: 0;
+		list-style: none;
+		opacity: 0.5;
+
+		-moz-transition: all 300ms;
+		-webkit-transition: all 300ms;
+		transition: all 300ms;
+}
+		#slide-menu li {
+			cursor: pointer;
+			padding-bottom: 0;
+}
+
+	#slide-menu a {
+		font-family: 'Roboto Condensed', sans-serif;
+    display: block;
+    text-align: left;
+    outline: none;
+    box-shadow: inset 0 -1px rgba(0,0,0,0.2);
+    color: #FFF;
+    text-transform: uppercase;
+    text-shadow: 0 0 1px rgba(255,255,255,0.1);
+    letter-spacing: 1px;
+    font-weight: 400;
+    padding: 1.2em;
+    cursor: default;
+    text-decoration: none;
+    font-size: 0.7em;
+    -webkit-transition: background 0.3s, box-shadow 0.3s;
+    transition: background 0.3s, box-shadow 0.3s;
+	}
+
+#slide-menu a:hover {
+    background: rgba(0,0,0,0.2);
+    box-shadow: inset 0 -1px rgba(0,0,0,0);
+    color: #fff;
+}
+
+#slide-menu:first-child a {
+    box-shadow: inset 0 -1px rgba(0,0,0,0.2), inset 0 0px rgba(0,0,0,0.2);
+}
+
+body.menu-active nav#slide-menu { right: 0px; }
+body.menu-active nav#slide-menu ul { right: 0px; opacity: 1; }
+
+/*
+  Content
+*/
+
+div#content {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+
+	-moz-transition: all 300ms;
+	-webkit-transition: all 300ms;
+	transition: all 300ms;
+}
+
+	div.menu-trigger {
+		position: fixed;
+top: 25px;
+right: 20px;
+cursor: pointer;
+font-size: 40px;
+line-height: 0;
+-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
+}
+		.menu-trigger:before { 
+			content: '\e603';
+			display: inline-block;
+			width: 43px;
+			height: 36px;
+			color: #47A4AD;
+			font-family: "icomoon";
+			font-style: normal;
+			font-size: 1.2em;
+			font-weight: normal;
+			font-variant: normal;
+			text-align: center;
+			text-transform: none;
+			line-height: 36px;
+			-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
+		}
+
+		.menu-active .menu-trigger:before { 
+			display: none;
+		}
+
+		.menu-trigger:hover:before { 
+			color: #454444;
+		}
+
+		.menu-active .menu-trigger:after { 
+			content: '\e600';
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			color: #454444;
+			background-color: #FFF;
+			font-family: "icomoon";
+			font-style: normal;
+			font-size: 1.2em;
+			font-weight: normal;
+			font-variant: normal;
+			text-align: center;
+			text-transform: none;
+			line-height: 36px;
+			-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
+		}
+
+		.menu-trigger:hover:after {
+			color: #47A4AD;
+		}
+
+		div.menu-trigger-1 {
+		position: fixed;
+top: 5px;
+right: 0px;
+cursor: pointer;
+font-size: 40px;
+line-height: 0;
+-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
+}
+		.menu-trigger-1:before { 
+			content: '\e603';
+			display: inline-block;
+			width: 43px;
+			height: 36px;
+			color: #47A4AD;
+			font-family: "icomoon";
+			font-style: normal;
+			font-size: 1.2em;
+			font-weight: normal;
+			font-variant: normal;
+			text-align: center;
+			text-transform: none;
+			line-height: 36px;
+			-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
+		}
+
+		.menu-active .menu-trigger-1:before { 
+			display: none;
+		}
+
+		.menu-trigger-1:hover:before { 
+			color: #454444;
+		}
+
+		.menu-active .menu-trigger-1:after { 
+			content: '\e600';
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			color: #454444;
+			background-color: #FFF;
+			font-family: "icomoon";
+			font-style: normal;
+			font-size: 1.2em;
+			font-weight: normal;
+			font-variant: normal;
+			text-align: center;
+			text-transform: none;
+			line-height: 36px;
+			-moz-transition: all 300ms;
+-webkit-transition: all 300ms;
+transition: all 300ms;
+		}
+
+		.menu-trigger-1:hover:after {
+			color: #47A4AD;
+		}
+
+body.menu-active div#content { right: 141px;}
+body.menu-active div#content .menu-trigger { right: 150px; }
+body.menu-active div#content .menu-trigger-1 { right: 150px; }
+
+.menu {
+    margin: 0;
+    float: right;
+    font-size: 20px;
+    padding: 18px 0.5em;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    color: #47A4AD;
+}
+
+/* SEARCH BAR */
+div#___gcse_0 {
+    width: 35%;
+    float: right;
+}
+
+form.gsc-search-box {
+    font-size: 13px;
+    margin-top: 0px;
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    top: 13px;
+    position: relative;
+}
+
+table.gsc-search-box td.gsc-input {
+     padding-right: 0px!important; 
+}
+
+input#gsc-i-id1 {
+    background: url()!important;
+}
+
+input.gsc-input {
+    border-color: #47A4AD!important;
+    font-size: 13px;
+    padding: 1px 6px;
+}
+
+input.gsc-input {
+    padding: 1px 6px;
+    border: 1px solid #47A4AD!important;
+    width: 99%;
+}
+
+.cse input.gsc-search-button, input.gsc-search-button {
+    font-family: 'Lato', sans-serif!important;
+    -webkit-border-radius: 0!important;
+    text-transform: uppercase!important;
+    background-color: #47A4AD!important;
+    border: 0!important;
+    padding: 2px 5px!important;
+    color: #FFF!important;
+    font-weight: normal!important;
+    font-size: inherit!important;
+}
+
+td.gsc-clear-button {
+    width: 14px;
+    display: none;
+}
+
+/* RESULTS */
+.results {
+padding: 1em;
+}
+
+.results #___gcse_0 {
+background: transparent;
+padding: 0;
+}
+
+.gsc-orderby-container {
+display: none;
+}
+
+table.gsc-branding, table.gcsc-branding {
+display: none;
+}
+
+.gsc-above-wrapper-area {
+    border: none;
+    padding: 0;
+}
+
+.gs-webResult.gs-result a.gs-title:visited, .gs-webResult.gs-result a.gs-title:visited b, .gs-imageResult a.gs-title:visited, .gs-imageResult a.gs-title:visited b {
+    color: #454444!important;
+}
+
+.gs-webResult.gs-result a.gs-title:link, .gs-webResult.gs-result a.gs-title:link b, .gs-imageResult a.gs-title:link, .gs-imageResult a.gs-title:link b {
+    color: #454444!important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    border-color: #FFF;
+    background-color: #FFFFFF!important;
+    color: #454444!important;
+}
+
+/* LASTEST NEWS */
+.flex-caption {
+    margin: 0;
+    position: absolute;
+    top: 0;
+    background: rgba(0,0,0,0.65);
+    color: #FFF;
+    width: 280px;
+    font-weight: 100;
+    transition: all 0.8s ease 0;
+    height: 100%;
+}
+
+.flex-caption h2 {
+    background-color: #FFF;
+    padding: 0.3em 0;
+    text-transform: capitalize;
+    border-bottom: none;
+    display: block;
+    font-size: 1.5em;
+    margin: 20px 0 0;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-indent: 20px;
+}
+
+.flex-caption h2:before {
+    content: "";
+    background: none;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.flex-caption h3 {
+    font-size: 1em;
+    color: #F48120;
+    padding: 0.5em 20px 0;
+}
+
+.flex-caption .body {
+    font-size: 0.8em;
+    padding: 0 21px 1em;
+}
+
+.flex-caption .body-link {
+    font-size: 0.8em;
+    color: #F48120;
+    border-bottom: 1px solid;
+}
+
+/* JOURNALS */
+.journals h2:before {
+    content: '';
+    background: url(../img/journals.png) no-repeat;
+    width: 50px;
+    height: 58px;
+    display: inline-block;
+    background-size: 100%;
+    vertical-align: middle;
+    margin-right: 0.5em;
+}
+
+.journals {
+	padding: 2em;
+}
+
+/* FOOTER */
+footer {
+  background-color: #47A4AD;
+  color: #FFF;
+  padding: 1em;
+}
+
+footer h2 {
+  color: #FFF;
+}
+
+footer .body {
+	text-align: left;
+}
+
+footer a {
+	color: #FFF;
+	border-bottom: 1px solid;
+	text-decoration: none;
+	transition: all 0.8s ease;
+}
+
+footer a:hover {
+	color: #454444;
+	border-bottom: 1px solid;
+}
+
+footer form {
+  color: #FFF;
+}
+
+footer input[type="submit"], footer input[type="reset"] {
+  background-color: #FFF;
+  color: #47A4AD;
+}
+
+footer input[type="submit"]:hover, footer input[type="reset"]:hover {
+  color: #FFF;
+}
+
+textarea {
+  width: 100%;
+}
+
+.label {
+	display: block;
+	width: 100%;
+}
+
+.text {
+	display: block;
+	width: 100%;
+}
+.contact .body {
+	text-align: left;
+}
+
+.copyright {
+	text-align: center;
+	padding: 1em;
+}
+
+.copyright a {
+	color: #47A4AD;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition: all 0.8s ease;
+}
+
+.copyright a:hover {
+	color: #454444;
+	border-bottom: 1px solid;
+}
+
+.copyright .body {
+  font-size: 0.8em;
+  padding: 1em 0 0em;
+  text-transform: uppercase;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.copyright .copyright1 {
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.copyright .body-link {
+	text-transform: inherit;
+}
+
+@media only screen and (min-width: 48em) {
+	.desktop {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+}
+.grid {
+  letter-spacing: -0.31em;
+  *letter-spacing: normal;
+  *word-spacing: -0.43em;
+  text-rendering: optimizespeed;
+}
+.opera-only :-o-prefocus,
+.grid {
+  word-spacing: -0.43em;
+}
+.unit {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  letter-spacing: normal;
+  text-rendering: auto;
+  vertical-align: top;
+  word-spacing: normal;
+}
+.unit-spacer {
+  padding: 8px;
+}
+@media only screen and (max-width: 63.9em) {
+  .unit-s-hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .unit-s-1 {
+    display: block;
+  }
+  .unit-s-1-2 {
+    width: 50%;
+  }
+  .unit-s-1-3 {
+    width: 33.33333%;
+  }
+  .unit-s-2-3 {
+    width: 66.66667%;
+  }
+  .unit-s-1-4 {
+    width: 25%;
+  }
+  .unit-s-3-4 {
+    width: 75%;
+  }
+  .unit-s-8-5 {
+    width: 85%;
+  }
+  .unit-s-1-5 {
+    width: 15%;
+  }
+}
+@media only screen and (min-width: 64em) and (max-width: 60em) {
+  .unit-m-hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .unit-m-1 {
+    display: block;
+  }
+  .unit-m-1-2 {
+    width: 50%;
+  }
+  .unit-m-1-3 {
+    width: 33.33333%;
+  }
+  .unit-m-2-3 {
+    width: 66.66667%;
+  }
+  .unit-m-1-4 {
+    width: 25%;
+  }
+  .unit-m-3-4 {
+    width: 75%;
+  }
+  .unit-m-8-5 {
+    width: 85%;
+  }
+  .unit-m-1-5 {
+    width: 15%;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .unit-l-hidden {
+    display: none;
+    visibility: hidden;
+  }
+  .unit-l-1 {
+    display: block;
+  }
+  .unit-l-1-2 {
+    width: 50%;
+  }
+  .unit-l-1-3 {
+    width: 33.33333%;
+  }
+  .unit-l-2-3 {
+    width: 66.66667%;
+  }
+  .unit-l-1-4 {
+    width: 25%;
+  }
+  .unit-l-3-4 {
+    width: 75%;
+  }
+  .unit-l-8-5 {
+    width: 85%;
+  }
+  .unit-l-1-5 {
+    width: 15%;
+  }
+}
+.flex-container a:hover,
+.flex-slider a:hover,
+.flex-container a:focus,
+.flex-slider a:focus {
+  outline: none;
+}
+.slides,
+.slides > li,
+.flex-control-nav,
+.flex-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.flex-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.flexslider {
+  margin: 0;
+  padding: 0;
+}
+.flexslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.flexslider .slides img {
+  width: 100%;
+  display: block;
+}
+.flexslider .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .flexslider .slides {
+  display: block;
+}
+* html .flexslider .slides {
+  height: 1%;
+}
+.no-js .flexslider .slides > li:first-child {
+  display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.flexslider {
+  position: relative;
+  zoom: 1;
+}
+.flexslider .slides {
+  zoom: 1;
+}
+.flexslider .slides img {
+  height: auto;
+}
+.flex-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.loading .flex-viewport {
+  max-height: 300px;
+}
+.carousel li {
+  margin-right: 5px;
+}
+.flex-direction-nav {
+  *height: 0;
+}
+.flex-direction-nav a {
+  text-decoration: none;
+  display: block;
+  width: 40px;
+  height: 44px;
+  margin: -20px 0 0;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  overflow: hidden;
+  opacity: 0;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.flex-direction-nav a:before {
+  font-family: "flexslider-icon";
+  font-size: 40px;
+  display: inline-block;
+  content: '\f001';
+  color: rgba(0, 0, 0, 0.8);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.3);
+}
+.flex-direction-nav a.flex-next:before {
+  content: '\f002';
+}
+.flex-direction-nav .flex-prev {
+  left: -50px;
+}
+.flex-direction-nav .flex-next {
+  right: -50px;
+  text-align: right;
+}
+.flexslider:hover .flex-direction-nav .flex-prev {
+  opacity: 0.7;
+  left: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-prev:hover {
+  opacity: 1;
+}
+.flexslider:hover .flex-direction-nav .flex-next {
+  opacity: 0.7;
+  right: 10px;
+}
+.flexslider:hover .flex-direction-nav .flex-next:hover {
+  opacity: 1;
+}
+.flex-direction-nav .flex-disabled {
+  opacity: 0!important;
+  filter: alpha(opacity=0);
+  cursor: default;
+}
+.flex-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+.flex-pauseplay a:before {
+  font-family: "flexslider-icon";
+  font-size: 20px;
+  display: inline-block;
+  content: '\f004';
+}
+.flex-pauseplay a:hover {
+  opacity: 1;
+}
+.flex-pauseplay a.flex-play:before {
+  content: '\f003';
+}
+.flex-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -40px;
+  text-align: center;
+}
+.flex-control-nav li {
+  margin: 0 6px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.flex-control-paging li a {
+  width: 11px;
+  height: 11px;
+  display: block;
+  background: #666;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  text-indent: -9999px;
+  -webkit-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -o-box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+}
+.flex-control-paging li a:hover {
+  background: #333;
+  background: rgba(0, 0, 0, 0.7);
+}
+.flex-control-paging li a.flex-active {
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  cursor: default;
+}
+.flex-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.flex-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.flex-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.flex-control-thumbs img:hover {
+  opacity: 1;
+}
+.flex-control-thumbs .flex-active {
+  opacity: 1;
+  cursor: default;
+}
+/* ====================================================================================================================
+ * RESPONSIVE
+ * ====================================================================================================================*/
+@media screen and (max-width: 860px) {
+  .flex-direction-nav .flex-prev {
+    opacity: 1;
+    left: 10px;
+  }
+  .flex-direction-nav .flex-next {
+    opacity: 1;
+    right: 10px;
+  }
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;margin:0.67em 0;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:bold;}dfn{font-style:italic;}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace,serif;font-size:1em;}pre{white-space:pre-wrap;}q{quotes:"\201C" "\201D" "\2018" "\2019";}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-0.5em;}sub{bottom:-0.25em;}img{border:0;}svg:not(:root){overflow:hidden;}figure{margin:0;}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em;}legend{border:0;padding:0;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,select{text-transform:none;}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer;}button[disabled],html input[disabled]{cursor:default;}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0;}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none;}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}
+.cbp-af-header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: #FFF;
+	z-index: 10000;
+	height: 89px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+.cbp-af-header .cbp-af-inner {
+	margin: 0 auto;
+}
+
+.cbp-af-header h1,
+.cbp-af-header nav {
+	display: inline-block;
+	position: relative;
+}
+
+ /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
+
+.cbp-af-header h1 {
+	text-transform: uppercase;
+	color: #333;
+	letter-spacing: 4px;
+	font-size: 4em;
+	margin: 0;
+	float: left;
+}
+
+.cbp-af-header nav {
+	font-family: 'Lato', sans-serif;
+	    padding: 45px 0 0;
+}
+
+.cbp-af-header nav a {
+	    color: #47A4AD;
+    font-weight: 400;
+    font-size: 1em;
+    text-decoration: none;
+    padding: 0 1em;
+    transition: all 0.8s ease;
+}
+
+.cbp-af-header nav a:hover {
+	color: #F48120;
+	font-weight: 600;
+}
+
+/* Transitions and class for reduced height */
+.cbp-af-header h1,
+.cbp-af-header nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.cbp-af-header ul {
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+.cbp-af-header li {
+position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+/* Example Media Queries */
+@media screen and (max-width: 55em) {
+	
+	.cbp-af-header .cbp-af-inner {
+		width: 100%;
+	}
+
+	.cbp-af-header h1,
+	.cbp-af-header nav {
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		float: none;
+	}
+
+	.cbp-af-header h1,
+	.cbp-af-header nav a {
+		line-height: 89px;
+	}
+
+	.cbp-af-header nav a {
+		margin: 0 10px;
+	}
+
+}
+
+@media screen and (max-width: 32.25em) {
+	.cbp-af-header nav a {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 24em) {
+	.cbp-af-header nav a,
+	.cbp-af-header.cbp-af-header-shrink nav a {
+		line-height: 1;
+	}
+}
+
+@media only screen and (min-width: 48em) {
+	.cbp-af-header {
+	position: inherit;
+	border-bottom: 2px solid #47A4AD;
+	box-shadow: none;
+	}
+}
