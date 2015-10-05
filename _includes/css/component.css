@@ -36,7 +36,7 @@
 
 .cbp-af-header nav {
 	font-family: 'Lato', sans-serif;
-	    padding: 45px 0 0;
+	    padding: 13px 0 0;
 }
 
 .cbp-af-header nav a {
@@ -44,7 +44,7 @@
     font-weight: 400;
     font-size: 1em;
     text-decoration: none;
-    padding: 0 1em;
+    padding: 0 0.5em;
     transition: all 0.8s ease;
 }
 
@@ -87,7 +87,6 @@ position:relative;
 	.cbp-af-header nav {
 		display: block;
 		margin: 0 auto;
-		text-align: center;
 		float: none;
 	}
 
@@ -95,11 +94,6 @@ position:relative;
 	.cbp-af-header nav a {
 		line-height: 89px;
 	}
-
-	.cbp-af-header nav a {
-		margin: 0 10px;
-	}
-
 }
 
 @media screen and (max-width: 32.25em) {

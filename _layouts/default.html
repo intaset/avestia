@@ -39,7 +39,7 @@
     <li><a href="about">About Us</a></li>
     <li><a href="ethics">Ethics in Publishing</a></li>
     <li><a href="openaccess">Open Access</a></li>
-    <li><a href="editor">Become an Editor</a></li>
+    <li><a href="editor">Become a Reviewer or an Editor</a></li>
     <li><a href="publishing">Your Publishing Needs</a></li>
     <li><a href="proceedings">Conference Proceedings</a></li>
     <li><a href="news">Latest News</a></li>
@@ -72,17 +72,7 @@
     <div class="mobile">
       {% include nav.html %}
       <div class="bg">
-        <div class="searchbox grid">
-        <div class="unit unit-s-1 unit-m-3-4 unit-l-3-4">
-          <div class="unit unit-s-1 unit-m-1-4-2 unit-l-1-4-2">
-            <p class="body">Search:</p> 
-          </div>
-          
-          <div class="unit unit-s-3-4 unit-m-3-4 unit-l-3-4">
-            <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
-          </div>
-        </div>
-        </div>
+        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
       </div>
     </div> <!-- Mobile -->
   </header>
@@ -93,7 +83,7 @@
    {{content}}
   </div>
 
-
+  {% include footer.html %}
 </div>
 
 
