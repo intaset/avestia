@@ -1028,6 +1028,47 @@ display: none;
   margin-bottom: 1em;
 }
 
+/* RECENTS */
+.recent-pg {
+  background-color: #FFF;
+}
+
+.jrecent {
+    padding-left: 0;
+    border-bottom: 1px solid #47A4AD;
+    margin-bottom: 1em;
+}
+
+.jrecent:last-child {
+  margin-bottom: 0;
+}
+
+.jrecent .body {
+    padding: 0;
+}
+
+.jrecent .body-link:hover {
+    border-bottom: none;
+    color: #F48120;
+    padding: 0;
+}
+
+.jname {
+    float: left;
+    background-color: #47A4AD;
+    color: #FFF;
+    padding: 0.8em;
+    width: 11%;
+}
+
+.jname .body {
+    font-family: 'Lato', sans-serif;
+}
+
+.jcontent {
+    padding-left: 7em;
+}
+
 /* FORM */
 .form span {
   display: block;
@@ -1054,6 +1095,34 @@ display: none;
 }
 
 .form .body {
+  padding-bottom: 0;
+}
+
+.contactform span {
+  display: block;
+}
+
+.contactform input, .contactform select, .contactform textarea {
+    width: 100%;
+}
+
+.contactform .form_button {
+    display: inline-block;
+    width: 30%!important;
+    border: 0;
+    padding: 0.5em;
+    background-color: #47A4AD;
+    color: #FFF;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    transition: all 0.8s ease;
+}
+
+.contactform .form_button:hover {
+    background-color: #F48120;
+}
+
+.contactform .body {
   padding-bottom: 0;
 }
 

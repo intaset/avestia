@@ -1,11 +1,129 @@
+<?php
+
+$my_email = "info@avestia.com";
+
+/*
+
+Enter the continue link to offer the user after the form is sent.  If you do not change this, your visitor will be given a continue link to your homepage.
+
+If you do change it, remove the "/" symbol below and replace with the name of the page to link to, eg: "mypage.htm" or "http://www.elsewhere.com/page.htm"
+
+*/
+
+$continue = "/";
+
+/*
+
+Step 3:
+
+Save this file (FormToEmail.php) and upload it together with your webpage containing the form to your webspace.  IMPORTANT - The file name is case sensitive!  You must save it exactly as it is named above!  Do not put this script in your cgi-bin directory (folder) it may not work from there.
+
+THAT'S IT, FINISHED!
+
+You do not need to make any changes below this line.
+
+*/
+
+$errors = array();
+
+// Remove $_COOKIE elements from $_REQUEST.
+
+if(count($_COOKIE)){foreach(array_keys($_COOKIE) as $value){unset($_REQUEST[$value]);}}
+
+// Check all fields for an email header.
+
+function recursive_array_check_header($element_value)
+{
+
+global $set;
+
+if(!is_array($element_value)){if(preg_match("/(%0A|%0D|\n+|\r+)(content-type:|to:|cc:|bcc:)/i",$element_value)){$set = 1;}}
+else
+{
+
+foreach($element_value as $value){if($set){break;} recursive_array_check_header($value);}
+
+}
+
+}
+
+recursive_array_check_header($_REQUEST);
+
+if($set){$errors[] = "You cannot send an email header";}
+
+unset($set);
+
+// Validate email field.
+
+if(isset($_REQUEST['email']) && !empty($_REQUEST['email']))
+{
+if(preg_match("/(%0A|%0D|\n+|\r+|:)/i",$_REQUEST['email'])){$errors[] = "Email address may not contain a new line or a colon";}
+
+$_REQUEST['email'] = trim($_REQUEST['email']);
+
+if(substr_count($_REQUEST['email'],"@") != 1 || stristr($_REQUEST['email']," ")){$errors[] = "Email address is invalid";}else{$exploded_email = explode("@",$_REQUEST['email']);if(empty($exploded_email[0]) || strlen($exploded_email[0]) > 64 || empty($exploded_email[1])){$errors[] = "Email address is invalid";}else{if(substr_count($exploded_email[1],".") == 0){$errors[] = "Email address is invalid";}else{$exploded_domain = explode(".",$exploded_email[1]);if(in_array("",$exploded_domain)){$errors[] = "Email address is invalid";}else{foreach($exploded_domain as $value){if(strlen($value) > 63 || !preg_match('/^[a-z0-9-]+$/i',$value)){$errors[] = "Email address is invalid"; break;}}}}}}
+
+}
+
+// Check referrer is from same site.
+
+if(!(isset($_SERVER['HTTP_REFERER']) && !empty($_SERVER['HTTP_REFERER']) && stristr($_SERVER['HTTP_REFERER'],$_SERVER['HTTP_HOST']))){$errors[] = "You must enable referrer logging to use the form";}
+
+// Check for a blank form.
+
+function recursive_array_check_blank($element_value)
+{
+
+global $set;
+
+if(!is_array($element_value)){if(!empty($element_value)){$set = 1;}}
+else
+{
+
+foreach($element_value as $value){if($set){break;} recursive_array_check_blank($value);}
+
+}
+
+}
+
+recursive_array_check_blank($_REQUEST);
+
+if(!$set){$errors[] = "You cannot send a blank form";}
+
+unset($set);
+
+// Display any errors and exit if errors exist.
+
+if(count($errors)){foreach($errors as $value){print "$value<br>";} exit;}
+
+if(!defined("PHP_EOL")){define("PHP_EOL", strtoupper(substr(PHP_OS,0,3) == "WIN") ? "\r\n" : "\n");}
+
+// Build message.
+
+function build_message($request_input){if(!isset($message_output)){$message_output ="";}if(!is_array($request_input)){$message_output = $request_input;}else{foreach($request_input as $key => $value){if(!empty($value)){if(!is_numeric($key)){$message_output .= str_replace("_"," ",ucfirst($key)).": ".build_message($value).PHP_EOL.PHP_EOL;}else{$message_output .= build_message($value).", ";}}}}return rtrim($message_output,", ");}
+
+$message = build_message($_REQUEST);
+
+$message = $message . PHP_EOL.PHP_EOL."-- ".PHP_EOL."";
+
+$message = stripslashes($message);
+
+$subject = $_REQUEST['Subject'];
+
+$headers = "From: " . $_REQUEST['Email'];
+
+mail($my_email,$subject,$message,$headers);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="robots" content="noarchive">
-<meta name="description" content="Avestia's Publishing provides you the opportunity to publish your conference proceedings with us!">
-<meta name="keywords" content="avestia, publishing, journals, papers, science">
-<title>Avestia Publishing - Your Publishing Needs</title>
+<meta name="description" content="{{page.meta}}">
+<meta name="keywords" content="{{page.keyword}}">
+<title>Avestia Publishing - Thank You</title>
 
 <meta name="handheldfriendly" content="true">
 <meta name="mobileoptimized" content="240">
@@ -67,9 +185,9 @@
   <div class="desktop">
       <div class="cbp-af-header">
 	<div class="cbp-af-inner">
-		<a href="/avestia/"><img src="img/logo.svg" class="flex-logo"></a>
+		<a href="{{site.baseurl}}/"><img src="img/logo.svg" class="flex-logo"></a>
 			<nav>
-				<a href="/avestia/">Home</a>
+				<a href="{{site.baseurl}}/">Home</a>
 				<a href="http://amss.avestia.com/">Submission</a>
 				<a href="journals">Journals</a>
 				<a href="ethics">Ethics in Publishing</a>
@@ -84,7 +202,7 @@
       <div class="cbp-af-header">
 	<div class="cbp-af-inner">
 		<div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
-      		<a href="/avestia/"><img src="img/logo.svg" class="flex-logo"></a>
+      		<a href="{{site.baseurl}}/"><img src="img/logo.svg" class="flex-logo"></a>
    	 	</div>
     	<div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
       		<div class="menu-trigger"><p class="menu">MENU</p></div>
@@ -98,31 +216,9 @@
   </header>
 
   <div class="grid main-content">
-   <div class="unit unit-s-1 unit-m-1 unit-l-1">
-  	<div class="content">
-      <h3>Your Publishing Needs</h3>
-      <p class="body">If you will be hosting a conference and have publication needs, Avestia can solely publish your proceedings as well as manage a special issue at your journal of choice.</p>
-
-      <p class="body">Please send us a full proposal regarding the conference proceedings including:</p>
-
-      <ul>
-        <li>The conference name</li>
-        <li>Tentative conference sessions</li>
-        <li>Exact date of conference</li>
-        <li>Exact date for submission deadline</li>
-      </ul>
-
-      <p class="body">Please send us your proposal to: <a href="mailto:proceedings@avestia.com" class="body-link">proceedings@avestia.com</a></p>
-
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-  </div>
-</div>
+   <h2>Contact Avestia Publishing</h2>
+   <p class="body">Thank you for your message!</p>
+   <p class="body">We have received your message and will get back to you within the next 48 hours.</p>
   </div>
 
   <footer>
@@ -130,7 +226,7 @@
 	<div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
 		<div class="unit-spacer">
 			<ul class="footer-links">
-				<li><a href="/avestia/" class="body-link">Avestia Publishing</a></li>
+				<li><a href="{{site.baseurl}}/" class="body-link">Avestia Publishing</a></li>
 				<li><a href="journals" class="body-link">Journals</a></li>
 				<li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
 				<li><a href="terms" class="body-link">Terms of Use</a></li>
@@ -224,6 +320,7 @@ var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "emai
 var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
+var spryconfirm1 = new Spry.Widget.ValidationConfirm("spryconfirm1", "Email");
 var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
 var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield4", "email");
 var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield5");
