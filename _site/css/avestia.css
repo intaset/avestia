@@ -473,6 +473,10 @@ ul li {
   max-width: 1280px;
 }
 
+.php {
+  padding: 11em 0px!important;
+}
+
 /* HEADER & NAVIGATION */
 .bg {
   background-color: #47A4AD;
@@ -764,10 +768,6 @@ body.menu-active div#content .menu-trigger-1 { right: 150px; }
   text-align: right;
   display: inline-block;
   padding: 50px 0 10px;
-}
-
-.menu-active .search-menu {
-    width: 100%;
 }
 
 /* SEARCH BAR */
@@ -1437,10 +1437,6 @@ h2 {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
-  }
-
-  .menu-active .search-menu {
-    width: 47%;
   }
 
   .nav {

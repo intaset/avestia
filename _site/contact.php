@@ -218,10 +218,21 @@ mail($my_email,$subject,$message,$headers);
     </div> <!-- Mobile -->
   </header>
 
-  <div class="main-content content">
+  <div class="main-content content php">
    <h2>Contact Avestia Publishing</h2>
    <p class="body">Thank you for your message!</p>
    <p class="body">We have received your message and will get back to you within the next 48 hours.</p>
+
+   <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
   </div>
 
   <footer>
