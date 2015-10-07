@@ -490,6 +490,10 @@ body.menu-active div#content .menu-trigger-1 { right: 150px; }
   padding: 50px 0 10px;
 }
 
+.menu-active .search-menu {
+    width: 100%;
+}
+
 /* SEARCH BAR */
 div#___gcse_0 {
     width: 210px;
@@ -1117,6 +1121,10 @@ footer {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
+  }
+
+  .menu-active .search-menu {
+    width: 47%;
   }
 
   .nav {
