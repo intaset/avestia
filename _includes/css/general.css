@@ -43,7 +43,7 @@ body {
 .flex-logo {
 	width: 100%;
 	vertical-align: text-bottom;
-	max-width: 170px;
+	max-width: 210px;
 	padding: 1em;
 	float: left;
 }
@@ -164,7 +164,7 @@ ul li {
 }
 
 .content {
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .subhead {
@@ -187,11 +187,16 @@ ul li {
   color: #47A4AD;
 }
 
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* HEADER & NAVIGATION */
 .bg {
   background-color: #47A4AD;
   text-align: center;
-  padding: 100px 0 14px;
+  padding: 114px 0 14px;
 }
 
 .bg-link {
@@ -313,7 +318,7 @@ div#content {
 
 	div.menu-trigger {
 		position: fixed;
-top: 25px;
+top: 35px;
 right: 20px;
 cursor: pointer;
 font-size: 40px;
@@ -609,7 +614,7 @@ display: none;
 }
 
 .journals {
-	padding: 1em;
+	padding: 1em 0;
 	text-align: center;
 }
 
@@ -961,7 +966,7 @@ footer {
 	}
 
 	.cbp-af-header nav a {
-    padding: 0 1em!important;
+    padding: 0 0.5em!important;
 	}
 
 	.flex-caption {
@@ -1020,7 +1025,7 @@ footer {
 }
 
 .journals {
-    padding: 2em;
+    padding: 2em 0;
 }
 .recent {
     padding: 2em;
@@ -1030,7 +1035,7 @@ footer {
 }
 
 .content {
-    padding: 2em;
+    padding: 2em 0;
 }
 
 .form input, .form select {
@@ -1045,6 +1050,17 @@ footer {
 /* 881 PX */
 @media only screen and (min-width: 55.06em) {
 	.cbp-af-header nav {
-    	padding: 46px 0 0!important;
+    	padding: 58px 0 0!important;
 	}
+
+  .cbp-af-header nav a {
+    padding: 0 1em!important;
+  }
+}
+
+/* 1100 PX */
+@media only screen and (min-width: 68.75em) {
+  .cbp-af-header nav a {
+    font-size: 1.1em!important;
+  }
 }

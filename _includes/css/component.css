@@ -5,7 +5,7 @@
 	width: 100%;
 	background: #FFF;
 	z-index: 10000;
-	height: 89px;
+	height: 105px;
 	overflow: hidden;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 	-webkit-transition: height 0.3s;
@@ -36,7 +36,7 @@
 
 .cbp-af-header nav {
 	font-family: 'Lato', sans-serif;
-	    padding: 13px 0 0;
+	    padding: 16px 0 0;
 }
 
 .cbp-af-header nav a {
@@ -92,7 +92,7 @@ position:relative;
 
 	.cbp-af-header h1,
 	.cbp-af-header nav a {
-		line-height: 89px;
+		line-height: 105px;
 	}
 }
 

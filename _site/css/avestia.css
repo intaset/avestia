@@ -313,7 +313,7 @@ body {
 .flex-logo {
 	width: 100%;
 	vertical-align: text-bottom;
-	max-width: 170px;
+	max-width: 210px;
 	padding: 1em;
 	float: left;
 }
@@ -434,7 +434,7 @@ ul li {
 }
 
 .content {
-    padding: 1em;
+    padding: 1em 0;
 }
 
 .subhead {
@@ -457,11 +457,16 @@ ul li {
   color: #47A4AD;
 }
 
+.main-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
 /* HEADER & NAVIGATION */
 .bg {
   background-color: #47A4AD;
   text-align: center;
-  padding: 100px 0 14px;
+  padding: 114px 0 14px;
 }
 
 .bg-link {
@@ -583,7 +588,7 @@ div#content {
 
 	div.menu-trigger {
 		position: fixed;
-top: 25px;
+top: 35px;
 right: 20px;
 cursor: pointer;
 font-size: 40px;
@@ -879,7 +884,7 @@ display: none;
 }
 
 .journals {
-	padding: 1em;
+	padding: 1em 0;
 	text-align: center;
 }
 
@@ -1231,7 +1236,7 @@ footer {
 	}
 
 	.cbp-af-header nav a {
-    padding: 0 1em!important;
+    padding: 0 0.5em!important;
 	}
 
 	.flex-caption {
@@ -1290,7 +1295,7 @@ footer {
 }
 
 .journals {
-    padding: 2em;
+    padding: 2em 0;
 }
 .recent {
     padding: 2em;
@@ -1300,7 +1305,7 @@ footer {
 }
 
 .content {
-    padding: 2em;
+    padding: 2em 0;
 }
 
 .form input, .form select {
@@ -1315,8 +1320,19 @@ footer {
 /* 881 PX */
 @media only screen and (min-width: 55.06em) {
 	.cbp-af-header nav {
-    	padding: 46px 0 0!important;
+    	padding: 58px 0 0!important;
 	}
+
+  .cbp-af-header nav a {
+    padding: 0 1em!important;
+  }
+}
+
+/* 1100 PX */
+@media only screen and (min-width: 68.75em) {
+  .cbp-af-header nav a {
+    font-size: 1.1em!important;
+  }
 }
 .grid {
   letter-spacing: -0.31em;
@@ -1340,7 +1356,7 @@ footer {
 .unit-spacer {
   padding: 8px;
 }
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 47.99em) {
   .unit-s-hidden {
     display: none;
     visibility: hidden;
@@ -1557,7 +1573,6 @@ html[xmlns] .flexslider .slides {
   display: block;
   width: 40px;
   height: 44px;
-  margin: -20px 0 0;
   position: absolute;
   top: 50%;
   z-index: 10;
@@ -1584,11 +1599,11 @@ html[xmlns] .flexslider .slides {
   content: '\f002';
 }
 .flex-direction-nav .flex-prev {
-  left: -50px;
+  left: 10px;
 }
 .flex-direction-nav .flex-next {
-  right: -50px;
   text-align: right;
+  right: 10px;
 }
 .flexslider:hover .flex-direction-nav .flex-prev {
   opacity: 0.7;
@@ -1722,7 +1737,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 	width: 100%;
 	background: #FFF;
 	z-index: 10000;
-	height: 89px;
+	height: 105px;
 	overflow: hidden;
 	box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 	-webkit-transition: height 0.3s;
@@ -1753,7 +1768,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 
 .cbp-af-header nav {
 	font-family: 'Lato', sans-serif;
-	    padding: 13px 0 0;
+	    padding: 16px 0 0;
 }
 
 .cbp-af-header nav a {
@@ -1809,7 +1824,7 @@ position:relative;
 
 	.cbp-af-header h1,
 	.cbp-af-header nav a {
-		line-height: 89px;
+		line-height: 105px;
 	}
 }
 

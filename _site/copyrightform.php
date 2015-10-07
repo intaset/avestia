@@ -184,7 +184,7 @@ else
     </div> <!-- Mobile -->
   </header>
 
-  <div class="grid main-content">
+  <div class="main-content">
    <h3>Incorrect File Upload</h3>
    <p class="body">Please note that the copyright form must be either a PDF or image file (.jpg, .png) for a successful submission.</p>
   </div>
@@ -443,7 +443,7 @@ mail($author_email,$author_subject,$message,$author_headers);
     </div> <!-- Mobile -->
   </header>
 
-  <div class="grid main-content">
+  <div class="main-content">
    <h3>Thank you for submitting your copyright.</h3>
    <p class="body">If you haven't already done so, please send us your manuscript in an MSWORD (doc or docx) format.</p>
 

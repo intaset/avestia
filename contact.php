@@ -215,7 +215,7 @@ mail($my_email,$subject,$message,$headers);
     </div> <!-- Mobile -->
   </header>
 
-  <div class="grid main-content">
+  <div class="main-content">
    <h2>Contact Avestia Publishing</h2>
    <p class="body">Thank you for your message!</p>
    <p class="body">We have received your message and will get back to you within the next 48 hours.</p>
