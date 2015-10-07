@@ -170,39 +170,42 @@ mail($my_email,$subject,$message,$headers);
 </nav>
 
 <div id="content">
-  <div class="desktop">
-    <div class="grid">
-      <div class="unit unit-s-8-5 unit-m-8-5 unit-l-8-5">
-        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
-      </div>
+  <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="/"><img src="img/logo.svg" class="flex-logo"></a>
 
-      <div class="unit unit-s-1-5 unit-m-1-5 unit-l-1-5">
-        <div class="menu-trigger-1"><p class="menu">MENU</p></div>
-      </div>
+    <div class="nav1">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
+
+    <div class="search-menu">
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only> <div class="menu-trigger-1"><p class="menu">MENU</p></div>
+    </div>
+
+    <div class="nav">
+      <nav>
+        <a href="/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
   </div>
-
-  <div class="desktop">
-      <div class="cbp-af-header">
-	<div class="cbp-af-inner">
-		<a href="{{site.baseurl}}/"><img src="img/logo.svg" class="flex-logo"></a>
-			<nav>
-				<a href="{{site.baseurl}}/">Home</a>
-				<a href="http://amss.avestia.com/">Submission</a>
-				<a href="journals">Journals</a>
-				<a href="ethics">Ethics in Publishing</a>
-				<a href="guidelines">Author Guidelines</a>
-		</nav>
-	</div>
 </div>
-  </div>
 
   <header>
     <div class="mobile">
       <div class="cbp-af-header">
 	<div class="cbp-af-inner">
 		<div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
-      		<a href="{{site.baseurl}}/"><img src="img/logo.svg" class="flex-logo"></a>
+      		<a href="/"><img src="img/logo.svg" class="flex-logo"></a>
    	 	</div>
     	<div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
       		<div class="menu-trigger"><p class="menu">MENU</p></div>
@@ -215,7 +218,7 @@ mail($my_email,$subject,$message,$headers);
     </div> <!-- Mobile -->
   </header>
 
-  <div class="main-content">
+  <div class="main-content content">
    <h2>Contact Avestia Publishing</h2>
    <p class="body">Thank you for your message!</p>
    <p class="body">We have received your message and will get back to you within the next 48 hours.</p>
@@ -320,7 +323,6 @@ var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield2", "emai
 var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield3");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
-var spryconfirm1 = new Spry.Widget.ValidationConfirm("spryconfirm1", "Email");
 var sprytextarea1 = new Spry.Widget.ValidationTextarea("sprytextarea1");
 var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield4", "email");
 var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield5");

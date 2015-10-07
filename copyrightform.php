@@ -140,28 +140,33 @@ else
 
 <div id="content">
   <div class="desktop">
-    <div class="grid">
-      <div class="unit unit-s-8-5 unit-m-8-5 unit-l-8-5">
-        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
-      </div>
-
-      <div class="unit unit-s-1-5 unit-m-1-5 unit-l-1-5">
-        <div class="menu-trigger-1"><p class="menu">MENU</p></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="desktop">
-      <div class="cbp-af-header">
+    <div class="cbp-af-header">
   <div class="cbp-af-inner">
     <a href="{{site.baseurl}}/"><img src="img/logo.svg" class="flex-logo"></a>
+
+    <div class="nav1">
       <nav>
         <a href="{{site.baseurl}}/">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
         <a href="journals">Journals</a>
         <a href="ethics">Ethics in Publishing</a>
         <a href="guidelines">Author Guidelines</a>
-    </nav>
+      </nav>
+    </div>
+
+    <div class="search-menu">
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only> <div class="menu-trigger-1"><p class="menu">MENU</p></div>
+    </div>
+
+    <div class="nav">
+      <nav>
+        <a href="{{site.baseurl}}/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
   </div>
 </div>
   </div>
@@ -184,9 +189,24 @@ else
     </div> <!-- Mobile -->
   </header>
 
-  <div class="main-content">
+  <div class="main-content content">
    <h3>Incorrect File Upload</h3>
    <p class="body">Please note that the copyright form must be either a PDF or image file (.jpg, .png) for a successful submission.</p>
+
+   <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
   </div>
 
   <footer>
@@ -419,40 +439,149 @@ mail($author_email,$author_subject,$message,$author_headers);
 
 <div id="content">
   <div class="desktop">
-    <div class="grid">
-      <div class="unit unit-s-8-5 unit-m-8-5 unit-l-8-5">
-        <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
-      </div>
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <a href="{{site.baseurl}}/"><img src="img/logo.svg" class="flex-logo"></a>
 
-      <div class="unit unit-s-1-5 unit-m-1-5 unit-l-1-5">
-        <div class="menu-trigger-1"><p class="menu">MENU</p></div>
-      </div>
+    <div class="nav1">
+      <nav>
+        <a href="{{site.baseurl}}/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
+    </div>
+
+    <div class="search-menu">
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only> <div class="menu-trigger-1"><p class="menu">MENU</p></div>
+    </div>
+
+    <div class="nav">
+      <nav>
+        <a href="{{site.baseurl}}/">Home</a>
+        <a href="http://amss.avestia.com/">Submission</a>
+        <a href="journals">Journals</a>
+        <a href="ethics">Ethics in Publishing</a>
+        <a href="guidelines">Author Guidelines</a>
+      </nav>
     </div>
   </div>
-
-  <div class="desktop">
-      {% include desktop-nav.html %}
+</div>
   </div>
 
   <header>
     <div class="mobile">
-      {% include nav.html %}
+      <div class="cbp-af-header">
+  <div class="cbp-af-inner">
+    <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
+          <a href="{{site.baseurl}}/"><img src="img/logo.svg" class="flex-logo"></a>
+      </div>
+      <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
+          <div class="menu-trigger"><p class="menu">MENU</p></div>
+      </div>
+  </div>
+</div>
       <div class="bg">
         <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
       </div>
     </div> <!-- Mobile -->
   </header>
 
-  <div class="main-content">
+  <div class="main-content content">
    <h3>Thank you for submitting your copyright.</h3>
    <p class="body">If you haven't already done so, please send us your manuscript in an MSWORD (doc or docx) format.</p>
 
    <p class="body">Thank you.<br><br>
 	Sincerely,<br>
 	Avestia Publishing</p>
+
+  <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
+      <p class="body">&nbsp;</p>
   </div>
 
-  {% include footer.html %}
+  <footer>
+<div class="grid">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="{{site.baseurl}}/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit. 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
+          <img src="img/fb.png" border="0" onmouseover="this.src='img/fb-hover.png'" onmouseout="this.src='img/fb.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
+          <img src="img/twitter.png" border="0" onmouseover="this.src='img/twitter-hover.png'" onmouseout="this.src='img/twitter.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
+          <img src="img/linkedin.png" border="0" onmouseover="this.src='img/linkedin-hover.png'" onmouseout="this.src='img/linkedin.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
+          <img src="img/google.png" border="0" onmouseover="this.src='img/google-hover.png'" onmouseout="this.src='img/google.png'">
+        </a>
+      </div>
+
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
+          <img src="img/youtube.png" border="0" onmouseover="this.src='img/youtube-hover.png'" onmouseout="this.src='img/youtube.png'">
+        </a>
+      </div>
+
+      <p class="body">All site content, except where otherwise noted, is licensed under a Creative Commons Attribution (CC BY) license.</p>
+    </div>
+  </div>
+
+</div>
+</footer>
+
+<div class="copyright">
+  <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+</div>
 </div>
 
 
@@ -548,3 +677,7 @@ slideshow: false,
 
 </body>
 </html>
+<?php
+
+}
+?>
