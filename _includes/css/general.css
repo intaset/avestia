@@ -48,6 +48,10 @@ body {
 	float: left;
 }
 
+.menu-active .flex-logo {
+    display: none;
+}
+
 .mobile {
 	display: block;
 }
@@ -190,6 +194,7 @@ ul li {
 .main-content {
   width: 90%;
   margin: 0 auto;
+  max-width: 1280px;
 }
 
 /* HEADER & NAVIGATION */
@@ -381,12 +386,23 @@ transition: all 300ms;
     background-color: #FFF;
 }
 
+/* DESKTOP MENU */
+.nav {
+  display: block;
+}
+
+.nav1 {
+  display: none;
+}
+
 		div.menu-trigger-1 {
 position: inherit;
     right: 0px;
     cursor: pointer;
     font-size: 40px;
     line-height: 0;
+    padding: 0;
+    display: inline-block;
     -moz-transition: all 300ms;
     -webkit-transition: all 300ms;
     transition: all 300ms;
@@ -467,10 +483,18 @@ body.menu-active div#content .menu-trigger-1 { right: 150px; }
     color: #47A4AD;
 }
 
+.search-menu {
+  width: 70%;
+  text-align: right;
+  display: inline-block;
+  padding: 50px 0 10px;
+}
+
 /* SEARCH BAR */
 div#___gcse_0 {
-    width: 35%;
-    float: right;
+    width: 210px;
+    display: inline-block;
+    vertical-align: super;
 }
 
 div#___gcse_1 {
@@ -969,6 +993,10 @@ footer {
     padding: 0 0.5em!important;
 	}
 
+  .cbp-af-header {
+    height: 140px!important;
+  }
+
 	.flex-caption {
     margin: 0;
     position: absolute;
@@ -1049,12 +1077,19 @@ footer {
 
 /* 881 PX */
 @media only screen and (min-width: 55.06em) {
-	.cbp-af-header nav {
-    	padding: 58px 0 0!important;
-	}
-
   .cbp-af-header nav a {
     padding: 0 1em!important;
+  }
+
+  .search-menu {
+  width: 75%;
+  }
+}
+
+/* 1000 PX */
+@media only screen and (min-width: 62.5em) {
+  .search-menu {
+  width: 78%;
   }
 }
 
@@ -1062,5 +1097,73 @@ footer {
 @media only screen and (min-width: 68.75em) {
   .cbp-af-header nav a {
     font-size: 1.1em!important;
+  }
+  .search-menu {
+  width: 80%;
+  }
+}
+
+/* 1200 PX */
+@media only screen and (min-width: 75em) {
+  .nav1 {
+    display: inline-block;
+    width: 52%;
+    line-height: 137px;
+  }
+
+  .search-menu {
+    width: 30%;
+    text-align: right;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  div.menu-trigger-1 {
+    padding: 0px;
+  }
+
+  .cbp-af-header nav a {
+    font-size: 0.98em!important;
+  }
+
+  .cbp-af-header {
+    height: 107px!important;
+  }
+}
+
+/* 1280 PX */
+@media only screen and (min-width: 80em) {
+.cbp-af-header nav a {
+    font-size: 1em!important;
+}
+}
+
+/* 1380 PX */
+@media only screen and (min-width: 86em){
+.cbp-af-header nav a {
+    font-size: 1.1em!important;
+}
+
+.search-menu {
+    width: 32%;
+}
+}
+
+/* 1600 PX */
+@media only screen and (min-width: 100em){
+  .search-menu {
+    width: 34%;
+  }
+}
+
+/* 1800 PX */
+@media only screen and (min-width: 112em){
+  .search-menu {
+    width: 36%;
   }
 }

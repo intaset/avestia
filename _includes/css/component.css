@@ -36,7 +36,7 @@
 
 .cbp-af-header nav {
 	font-family: 'Lato', sans-serif;
-	    padding: 16px 0 0;
+	padding: 0 0.5em;
 }
 
 .cbp-af-header nav a {
@@ -92,7 +92,6 @@ position:relative;
 
 	.cbp-af-header h1,
 	.cbp-af-header nav a {
-		line-height: 105px;
 	}
 }
 
