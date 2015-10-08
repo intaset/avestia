@@ -172,7 +172,7 @@ mail($my_email,$subject,$message,$headers);
 <div id="content">
   <div class="cbp-af-header">
   <div class="cbp-af-inner">
-    <a href="/"><img src="img/logo.svg" class="flex-logo"></a>
+    <a href="/"><img src="img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
     <div class="nav1">
       <nav>
@@ -205,7 +205,7 @@ mail($my_email,$subject,$message,$headers);
       <div class="cbp-af-header">
 	<div class="cbp-af-inner">
 		<div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
-      		<a href="/"><img src="img/logo.svg" class="flex-logo"></a>
+      		<a href="/"><img src="img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
    	 	</div>
     	<div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
       		<div class="menu-trigger"><p class="menu">MENU</p></div>
@@ -237,73 +237,67 @@ mail($my_email,$subject,$message,$headers);
 
   <footer>
 <div class="grid">
-	<div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
-		<div class="unit-spacer">
-			<ul class="footer-links">
-				<li><a href="{{site.baseurl}}/" class="body-link">Avestia Publishing</a></li>
-				<li><a href="journals" class="body-link">Journals</a></li>
-				<li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
-				<li><a href="terms" class="body-link">Terms of Use</a></li>
-				<li><a href="sitemap" class="body-link">Sitemap</a></li>
-			</ul>
-		</div>
-	</div>
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <ul class="footer-links">
+        <li><a href="/" class="body-link">Avestia Publishing</a></li>
+        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
+        <li><a href="terms" class="body-link">Terms of Use</a></li>
+        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+      </ul>
+    </div>
+  </div>
 
-	<div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
-		<div class="unit-spacer">
-			<p class="body">
-				Avestia Publishing,<br>
-				International ASET Inc.<br>
-				Unit. 417, 1376 Bank St.<br>
-				Ottawa, ON, Canada, K1H 7Y3<br>
-				+1 613-695-3040<br>
-				<a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
-			</p>
-		</div>
-	</div>
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer">
+      <p class="body">
+        Avestia Publishing,<br>
+        International ASET Inc.<br>
+        Unit. 417, 1376 Bank St.<br>
+        Ottawa, ON, Canada, K1H 7Y3<br>
+        +1 613-695-3040<br>
+        <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
+      </p>
+    </div>
+  </div>
 
-	<div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
-		<div class="unit-spacer social">
+  <div class="unit unit-s-1 unit-s-1-3 unit-m-1-3 unit-l-1-3">
+    <div class="unit-spacer social">
 
-			<div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
-				<a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
-					<img src="img/fb.png" border="0" onmouseover="this.src='img/fb-hover.png'" onmouseout="this.src='img/fb.png'">
-				</a>
-			</div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
+          <img src="img/fb.png" border="0" onmouseover="this.src='img/fb-hover.png'" onmouseout="this.src='img/fb.png'">
+        </a>
+      </div>
 
-			<div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
-				<a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
-					<img src="img/twitter.png" border="0" onmouseover="this.src='img/twitter-hover.png'" onmouseout="this.src='img/twitter.png'">
-				</a>
-			</div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
+          <img src="img/twitter.png" border="0" onmouseover="this.src='img/twitter-hover.png'" onmouseout="this.src='img/twitter.png'">
+        </a>
+      </div>
 
-			<div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
-				<a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
-					<img src="img/linkedin.png" border="0" onmouseover="this.src='img/linkedin-hover.png'" onmouseout="this.src='img/linkedin.png'">
-				</a>
-			</div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
+          <img src="img/linkedin.png" border="0" onmouseover="this.src='img/linkedin-hover.png'" onmouseout="this.src='img/linkedin.png'">
+        </a>
+      </div>
 
-			<div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
-				<a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
-					<img src="img/google.png" border="0" onmouseover="this.src='img/google-hover.png'" onmouseout="this.src='img/google.png'">
-				</a>
-			</div>
+      <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
+        <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
+          <img src="img/google.png" border="0" onmouseover="this.src='img/google-hover.png'" onmouseout="this.src='img/google.png'">
+        </a>
+      </div>
 
-			<div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
-				<a href="https://cvmldm.avestia.com" target="blank" title="International Journal of Computer Vision, Machine Learning and Data Mining (CVMLDM)">
-					<img src="img/youtube.png" border="0" onmouseover="this.src='img/youtube-hover.png'" onmouseout="this.src='img/youtube.png'">
-				</a>
-			</div>
-
-			<p class="body">All site content, except where otherwise noted, is licensed under a Creative Commons Attribution (CC BY) license.</p>
-		</div>
-	</div>
+      <p class="body">All site content, except where otherwise noted, is licensed under a Creative Commons Attribution (CC BY) license.</p>
+    </div>
+  </div>
 
 </div>
 </footer>
 
 <div class="copyright">
-	<p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
+  <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
 </div>
 </div>
 
