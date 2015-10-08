@@ -301,6 +301,7 @@ html {
   font: normal 100%/1.4 'Merriweather', sans-serif;
   background-color: #FFF;
   overflow-x: hidden!important;
+  background-color: #47A4AD;
 }
 
 body {
@@ -505,14 +506,14 @@ ul li {
 	font-family: 'Lato', sans-serif;
 	text-transform: uppercase;
 	font-weight: 300;
-	padding: 0.5em 0.5em 0em;
+	padding: 0.5em 0.5em;
   font-size: 1.5em!important;
 	margin: 0!important;
 	color: #FFF;
 }
 
 nav#slide-menu {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: -141px;
 	bottom: 0;
@@ -523,7 +524,7 @@ nav#slide-menu {
 	height: 100%;
 	  background-color: #47A4AD;
 	overflow-x: hidden;
-overflow-y: scroll;
+overflow-y: hidden;
   z-index: 99999;
 
 	-moz-transition: all 300ms;
@@ -1199,6 +1200,7 @@ footer .grid {
   width: 90%;
   max-width: 1280px;
   margin: 0 auto;
+  background-color: transparent;
 }
 
 .footer-links {
@@ -1294,6 +1296,19 @@ footer .grid {
 	.mobile {
 		display: none;
 	}
+
+  nav#slide-menu {
+    right: -300px;
+    max-width: 300px;
+  }
+
+  #slide-menu a {
+    font-size: 1em;
+  }
+
+  body.menu-active div#content {
+    right: 300px;
+  }
 
 	input.gsc-input {
     	border: 1px solid #F48120!important;
@@ -1514,6 +1529,7 @@ h2 {
   *letter-spacing: normal;
   *word-spacing: -0.43em;
   text-rendering: optimizespeed;
+  background-color: #FFF;
 }
 .opera-only :-o-prefocus,
 .grid {
