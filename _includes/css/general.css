@@ -495,7 +495,7 @@ body.menu-active div#content .menu-trigger-1 { right: 150px; }
   width: 70%;
   text-align: right;
   display: inline-block;
-  padding: 10px 0 6px;
+  padding: 12px 0 12px;
 }
 
 /* SEARCH BAR */
@@ -516,7 +516,7 @@ form.gsc-search-box {
     margin-right: 0;
     margin-left: 0;
     width: 100%;
-    padding-top: 8px;
+    padding-top: 0px;
 }
 
 table.gsc-search-box td.gsc-input {
@@ -1179,7 +1179,7 @@ h2 {
 @media only screen and (min-width: 75em) {
   .nav1 {
     display: inline-block;
-    width: 52%;
+    width: 51%;
     line-height: 0px;
     padding: 69px 0;
     vertical-align: top;
@@ -1188,7 +1188,7 @@ h2 {
   .search-menu {
     width: 30%;
     text-align: right;
-    padding: 8px 0;
+    padding: 12px 0;
   }
 
   .nav {
@@ -1204,7 +1204,7 @@ h2 {
   }
 
   .cbp-af-header nav a {
-    font-size: 0.98em!important;
+    font-size: 0.95em!important;
   }
 
   .cbp-af-header {
