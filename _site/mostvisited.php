@@ -1,6 +1,6 @@
 <?php
 
-$file = 'mostvisited.txt';
+$file = 'js/mostvisited.txt';
 
 
 $homepage = file_get_contents('https://ijtanmostvisitedpapers.appspot.com/query?id=ahhzfmlqdGFubW9zdHZpc2l0ZWRwYXBlcnNyFQsSCEFwaVF1ZXJ5GICAgICAgIAKDA');

@@ -924,7 +924,7 @@ display: none;
 }
 
 .journals {
-	padding: 1em 0;
+	padding: 1em;
 	text-align: center;
 }
 
@@ -1023,6 +1023,10 @@ display: none;
 .ethics-guidelines .body-1 {
 	text-align: right;
 
+}
+
+.ethics-guidelines .body-2 {
+  float: right;
 }
 
 /* CONF Proceedings */
@@ -1224,6 +1228,7 @@ footer .grid {
 
 .social .body {
 	padding-top: 1em;
+  text-align: left;
 }
 
 .copyright {
@@ -1376,12 +1381,12 @@ footer .grid {
 }
 
 .journals div {
-    margin: 0 2px;
+    margin: 0 1.5px;
     padding-bottom: 1em;
 }
 
 .journals {
-    padding: 2em 0;
+    padding: 2em;
 }
 .recent {
     padding: 2em;
@@ -1433,12 +1438,20 @@ h2 {
   .search-menu {
   width: 75%;
   }
+
+  .journals div {
+    margin: 0 2px;
+  }
 }
 
 /* 1000 PX */
 @media only screen and (min-width: 62.5em) {
   .search-menu {
   width: 78%;
+  }
+
+  .journals div {
+    margin: 0 2.5px;
   }
 }
 
@@ -1457,6 +1470,10 @@ h2 {
   .search-menu {
   width: 80%;
   }
+
+  .journals div {
+    margin: 3px;
+}
 }
 
 /* 1200 PX */
@@ -1490,12 +1507,19 @@ h2 {
   .cbp-af-header {
     height: 107px!important;
   }
+
+  .journals div {
+    margin: 3.4px;
+  }
 }
 
 /* 1280 PX */
 @media only screen and (min-width: 80em) {
 .cbp-af-header nav a {
     font-size: 1em!important;
+}
+.journals div {
+    margin: 3.8px;
 }
 }
 
@@ -1508,6 +1532,9 @@ h2 {
 .search-menu {
     width: 32%;
 }
+.journals div {
+    margin: 4.2px;
+}
 }
 
 /* 1600 PX */
@@ -1515,6 +1542,9 @@ h2 {
   .search-menu {
     width: 34%;
   }
+  .journals div {
+    margin: 4.5px;
+}
 }
 
 /* 1800 PX */
