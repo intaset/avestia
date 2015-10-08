@@ -263,16 +263,12 @@ else
         </a>
       </div>
 
-      <p class="body">All site content, except where otherwise noted, is licensed under a Creative Commons Attribution (CC BY) license.</p>
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
     </div>
   </div>
 
 </div>
 </footer>
-
-<div class="copyright">
-  <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
-</div>
 </div>
 
 
@@ -549,16 +545,12 @@ mail($author_email,$author_subject,$message,$author_headers);
         </a>
       </div>
 
-      <p class="body">All site content, except where otherwise noted, is licensed under a Creative Commons Attribution (CC BY) license.</p>
+      <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
     </div>
   </div>
 
 </div>
 </footer>
-
-<div class="copyright">
-  <p class="body">© Copyright 2015, International ASET Inc. – All Rights Reserved.</p>
-</div>
 </div>
 
 
