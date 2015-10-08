@@ -477,7 +477,7 @@ ul li {
 .bg {
   background-color: #47A4AD;
   text-align: center;
-  padding: 114px 0 14px;
+  padding: 124px 0 14px;
 }
 
 .bg-link {
@@ -770,7 +770,7 @@ body.menu-active div#content .menu-trigger-1 { right: 150px; }
 
 /* SEARCH BAR */
 div#___gcse_0 {
-    width: 210px;
+    width: 280px;
     display: inline-block;
     vertical-align: super;
 }
@@ -1463,10 +1463,6 @@ h2 {
 
   .nav {
     display: none;
-  }
-
-  div#___gcse_0 {
-    width: 280px;
   }
 
   div.menu-trigger-1 {
