@@ -132,7 +132,7 @@ mail($my_email,$subject,$message,$headers);
 
 <link href="css/avestia.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon">
 <!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
 <script src="js/modernizr.custom.63321.js"></script>
@@ -309,7 +309,6 @@ mail($my_email,$subject,$message,$headers);
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/cbpAnimatedHeader.min.js"></script>
     <script src="js/SpryValidationSelect.js" type="text/javascript"></script>
 
@@ -339,16 +338,6 @@ var sprytextfield2 = new Spry.Widget.ValidationTextField("sprytextfield4", "emai
 var sprytextfield3 = new Spry.Widget.ValidationTextField("sprytextfield5");
 var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield6");
 //-->
-</script>
-
-
-
-  <script>
-(function($){
-        $(window).load(function(){
-            $("html").niceScroll();
-        });
-    })(jQuery);
 </script>
 
 <script type="text/javascript">

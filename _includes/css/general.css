@@ -54,10 +54,6 @@ body {
   }
 }
 
-.menu-active .flex-logo {
-    display: none;
-}
-
 .mobile {
 	display: block;
 }
@@ -303,6 +299,7 @@ overflow-y: scroll;
     background: rgba(0,0,0,0.2);
     box-shadow: inset 0 -1px rgba(0,0,0,0);
     color: #fff;
+    cursor: pointer;
 }
 
 #slide-menu:first-child a {
@@ -399,6 +396,7 @@ transition: all 300ms;
 /* DESKTOP MENU */
 .nav {
   display: block;
+  text-align: center;
 }
 
 .nav1 {
@@ -497,7 +495,7 @@ body.menu-active div#content .menu-trigger-1 { right: 150px; }
   width: 70%;
   text-align: right;
   display: inline-block;
-  padding: 50px 0 10px;
+  padding: 10px 0 6px;
 }
 
 /* SEARCH BAR */
@@ -605,7 +603,7 @@ display: none;
 
 /* LASTEST NEWS */
 .flex-caption {
-    margin: 0 0 0 45px;
+    margin: 0 0 0 50px;
     position: absolute;
     top: 0;
     background: rgba(0,0,0,0.65);
@@ -666,6 +664,23 @@ display: none;
 
 .journals .body-1 {
 	text-align: right;
+}
+
+.j-pg h2 {
+  display: inline-block;
+  width: 30%
+}
+
+.oa {
+  display: inline-block;
+  vertical-align: top;
+  width: 69%;
+}
+
+.oa-img {
+  display: block;
+  width: 162px;
+  float: right;
 }
 
 /* Recent Publications */
@@ -910,6 +925,12 @@ footer {
   padding: 1em;
 }
 
+footer .grid {
+  width: 90%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .footer-links {
     margin: 0;
     padding: 0;
@@ -949,6 +970,11 @@ footer {
   color: #FFF;
 }
 
+/* IE */
+.ie9 .flex-logo {
+    width: 70%;
+  }
+
 /* 320 PX */
 @media only screen and (min-width: 20em) {
 	nav#slide-menu {
@@ -965,7 +991,7 @@ footer {
 	}
 
 	body.menu-active div#content .menu-trigger {
-    right: 194px;
+    right: 214px;
 	}
 }
 
@@ -985,7 +1011,7 @@ footer {
 	}
 
 	body.menu-active div#content .menu-trigger {
-    right: 220px;
+    right: 240px;
 	}
 }
 
@@ -998,10 +1024,6 @@ footer {
 	.mobile {
 		display: none;
 	}
-
-  .menu-active .flex-logo {
-    display: block;
-  }
 
 	input.gsc-input {
     	border: 1px solid #F48120!important;
@@ -1020,7 +1042,7 @@ footer {
   }
 
 	.flex-caption {
-    margin: 0 0 0 45px;
+    margin: 0 0 0 50px;
     position: absolute;
     top: 0;
     background: rgba(0,0,0,0.65);
@@ -1158,19 +1180,23 @@ h2 {
   .nav1 {
     display: inline-block;
     width: 52%;
-    line-height: 137px;
+    line-height: 0px;
+    padding: 69px 0;
+    vertical-align: top;
   }
 
   .search-menu {
     width: 30%;
     text-align: right;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0;
+    padding: 8px 0;
   }
 
   .nav {
     display: none;
+  }
+
+  div#___gcse_0 {
+    width: 280px;
   }
 
   div.menu-trigger-1 {

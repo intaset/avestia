@@ -283,7 +283,6 @@ else
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/cbpAnimatedHeader.min.js"></script>
     <script src="js/SpryValidationSelect.js" type="text/javascript"></script>
 
@@ -310,16 +309,6 @@ var sprytextfield4 = new Spry.Widget.ValidationTextField("sprytextfield4");
 var spryselect2 = new Spry.Widget.ValidationSelect("spryselect2", {invalidValue:"-1"});
 
 //-->
-</script>
-
-
-
-  <script>
-(function($){
-        $(window).load(function(){
-            $("html").niceScroll();
-        });
-    })(jQuery);
 </script>
 
 <script type="text/javascript">
