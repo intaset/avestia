@@ -27,27 +27,19 @@ loadXMLDoc('mostvisited.txt',function()
 var one = res[0].split(" - ");
 var two = res[1].split(" - ");
 var three = res[2].split(" - ");
-var four = res[3].split(" - ");
-var five = res[4].split(" - ");
 
 var authorsOne = res[6];
 var authorsTwo = res[8];
 var authorsThree = res[10];
-var authorsFour = res[12];
-var authorsFive = res[14];
 
 
 document.getElementById("mostVisited").innerHTML =
-"<a href="+res[5]+">"+one[0]+"</a>" + "<br>" + 
-authorsOne + "<br><div class='border'></div>" + 
-"<a href="+res[7]+">"+two[0]+"</a>" + "<br>" +  
-authorsTwo + "<br><div class='border'></div>" + 
-"<a href="+res[9]+">"+three[0]+"</a>" + "<br>" + 
-authorsThree + "<br><div class='border'></div>" + 
-"<a href="+res[11]+">"+four[0]+"</a>" + "<br>" + 
-authorsFour + "<br><div class='border'></div>" + 
-"<a href="+res[13]+">"+five[0]+"</a>" + "<br>" + 
-authorsFive;
+"<a href="+res[5]+" class='body-link'>"+one[0]+"</a><p class='body'>" + 
+authorsOne + "</p>" + 
+"<a href="+res[7]+" class='body-link'>"+two[0]+"</a><p class='body'>" +  
+authorsTwo + "</p>" + 
+"<a href="+res[9]+" class='body-link'>"+three[0]+"</a><p class='body'>" + 
+authorsThree + "</p>";
 
     }
   });
