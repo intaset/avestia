@@ -243,7 +243,7 @@ ul li {
 }
 
 nav#slide-menu {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	right: -141px;
 	bottom: 0;
