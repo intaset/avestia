@@ -600,7 +600,7 @@ div#content {
 }
 
 	div.menu-trigger {
-		position: fixed;
+		position: absolute;
 top: 35px;
 right: 20px;
 cursor: pointer;
@@ -749,7 +749,6 @@ transition: all 300ms;
 		}
 
 body.menu-active div#content { right: 141px;}
-body.menu-active div#content .menu-trigger { right: 150px; }
 body.menu-active div#content .menu-trigger-1 { right: 150px; }
 
 .menu {
@@ -1265,10 +1264,6 @@ footer .grid {
 	body.menu-active div#content {
     	right: 194px;
 	}
-
-	body.menu-active div#content .menu-trigger {
-    right: 214px;
-	}
 }
 
 /* 533 PX */
@@ -1284,10 +1279,6 @@ footer .grid {
 
 	body.menu-active div#content {
     	right: 220px;
-	}
-
-	body.menu-active div#content .menu-trigger {
-    right: 240px;
 	}
 }
 
