@@ -706,10 +706,8 @@ display: none;
 }
 
 .recent .body-link:hover {
-	color: #47A4AD;
-	border-bottom: 2px solid;
+	color: #F48120;
 	display: block;
-	padding-bottom: 2px;
 }
 
 .recent .body-1 {
