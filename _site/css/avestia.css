@@ -513,12 +513,12 @@ ul li {
 }
 
 nav#slide-menu {
-	position: fixed;
+	position: static;
 	top: 0;
 	right: -141px;
 	bottom: 0;
 	display: block;
-	float: left;
+	float: right;
 	width: 100%;
 	max-width: 141px;
 	height: 100%;
