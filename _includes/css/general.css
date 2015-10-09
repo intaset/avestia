@@ -824,6 +824,7 @@ display: none;
 /* RECENTS */
 .recent-pg {
   background-color: #FFF;
+  padding: 1em!important;
 }
 
 .jrecent {

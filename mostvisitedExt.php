@@ -1,6 +1,6 @@
 <?php
 
-$file = 'mostvisited.txt';
+$file = 'mostvisitedExt.txt';
 
 
 $homepage = file_get_contents('https://ijtanmostvisitedpapers.appspot.com/query?id=ahhzfmlqdGFubW9zdHZpc2l0ZWRwYXBlcnNyFQsSCEFwaVF1ZXJ5GICAgICAgIAKDA');
@@ -115,6 +115,61 @@ while($row = mysql_fetch_array($result)) {
 
 	if ($row['journal'] == 'IJTAN'){
 		if($allLinksExploded[4] == $row['link']){
+			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+		}
+	}
+}
+
+$result = mysql_query("SELECT * FROM mostVisited");
+
+while($row = mysql_fetch_array($result)) {
+
+	if ($row['journal'] == 'IJTAN'){
+		if($allLinksExploded[5] == $row['link']){
+			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+		}
+	}
+}
+
+$result = mysql_query("SELECT * FROM mostVisited");
+
+while($row = mysql_fetch_array($result)) {
+
+	if ($row['journal'] == 'IJTAN'){
+		if($allLinksExploded[6] == $row['link']){
+			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+		}
+	}
+}
+
+$result = mysql_query("SELECT * FROM mostVisited");
+
+while($row = mysql_fetch_array($result)) {
+
+	if ($row['journal'] == 'IJTAN'){
+		if($allLinksExploded[7] == $row['link']){
+			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+		}
+	}
+}
+
+$result = mysql_query("SELECT * FROM mostVisited");
+
+while($row = mysql_fetch_array($result)) {
+
+	if ($row['journal'] == 'IJTAN'){
+		if($allLinksExploded[8] == $row['link']){
+			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
+		}
+	}
+}
+
+$result = mysql_query("SELECT * FROM mostVisited");
+
+while($row = mysql_fetch_array($result)) {
+
+	if ($row['journal'] == 'IJTAN'){
+		if($allLinksExploded[9] == $row['link']){
 			$authorInfo =  $authorInfo . $row['link'] . '"' . $row['authors'] . '"';
 		}
 	}
