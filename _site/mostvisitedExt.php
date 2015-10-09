@@ -13,7 +13,7 @@ $counter = 0;
 
 for ($i=2;$i<sizeof($arr);$i++){
 
-	if ($arr[$i]=='/' and $arr[$i-1]=='"' and $arr[$i+1]!='"' and $counter != 5){
+	if ($arr[$i]=='/' and $arr[$i-1]=='"' and $arr[$i+1]!='"' and $counter != 10){
 
     	while ($arr[$i+1]!=','){
 
@@ -37,7 +37,7 @@ $counter = 0;
 
 for ($i=2;$i<sizeof($arr);$i++){
 
-	if ($arr[$i]=='-' and $arr[$i-7]=='"' and $arr[$i-9]==',' and $arr[$i-10]=='"' and $counter != 5){
+	if ($arr[$i]=='-' and $arr[$i-7]=='"' and $arr[$i-9]==',' and $arr[$i-10]=='"' and $counter != 10){
 
     	while ($arr[$i+2]!= ',' or $arr[$i+1]!= '"'){
 
