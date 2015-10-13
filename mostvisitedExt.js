@@ -22,53 +22,59 @@ loadXMLDoc('mostvisitedExt.txt',function()
     var txt=xmlhttp.responseText;
     
     
-    var res = txt.split('"');
+    var res = txt.split(' - ');
 
-var one = res[0].split(" - ");
+/*var one = res[0].split(" - ");
 var two = res[1].split(" - ");
 var three = res[2].split(" - ");
 var four = res[3].split(" - ");
 var five = res[4].split(" - ");
-var six = res[5].split(" - ");
-var seven = res[6].split(" - ");
-var eight = res[7].split(" - ");
-var nine = res[8].split(" - ");
-var ten = res[9].split(" - ");
 
-
-var authorsOne = res[11];
-var authorsTwo = res[13];
-var authorsThree = res[15];
-var authorsFour = res[17];
-var authorsFive = res[19];
-var authorsSix = res[21];
-var authorsSeven = res[23];
-var authorsEight = res[25];
-var authorsNine = res[27];
-var authorsTen = res[29];
-
+var authorsOne = res[6];
+var authorsTwo = res[8];
+var authorsThree = res[10];
+var authorsFour = res[12];
+var authorsFive = res[14];
+*/
 
 document.getElementById("mostVisitedExt").innerHTML =
-"<ul class='jrecent'><a href="+res[10]+" class='body-link'>"+one[0]+"</a><p class='body'>" + 
-authorsOne + "</p></ul>" + 
-"<ul class='jrecent'><a href="+res[12]+" class='body-link'>"+two[0]+"</a><p class='body'>" +  
-authorsTwo + "</p></ul>" + 
-"<ul class='jrecent'><a href="+res[14]+" class='body-link'>"+three[0]+"</a><p class='body'>" + 
-authorsThree + "</p></ul>" +
-"<ul class='jrecent'><a href="+res[16]+" class='body-link'>"+four[0]+"</a><p class='body'>" + 
-authorsFour + "</p></ul>" +
-"<ul class='jrecent'><a href="+res[18]+" class='body-link'>"+five[0]+"</a><p class='body'>" + 
-authorsFive + "</p></ul>" +
-"<ul class='jrecent'><a href="+res[20]+" class='body-link'>"+six[0]+"</a><p class='body'>" + 
-authorsSix + "</p></ul>" +
-"<ul class='jrecent'><a href="+res[22]+" class='body-link'>"+seven[0]+"</a><p class='body'>" + 
-authorsSeven + "</p></ul>" +
-"<ul class='jrecent'><a href="+res[24]+" class='body-link'>"+eight[0]+"</a><p class='body'>" + 
-authorsEight + "</p></ul>" +
-"<ul class='jrecent'><a href="+res[26]+" class='body-link'>"+nine[0]+"</a><p class='body'>" + 
-authorsNine + "</p></ul>" +
-"<ul class='jrecent'><a href="+res[28]+" class='body-link'>"+ten[0]+"</a><p class='body'>" + 
-authorsTen + "</p></ul>";
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[0]+"</p></div><div class='jcontent'><a href=http://"+res[0]+".avestia.com"+res[20]+" class='body-link' target='_blank'>"+res[1]+"</a><p class='body'>" + res[21] + "</p></div></ul>" 
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[2]+"</p></div><div class='jcontent'><a href=http://"+res[2]+".avestia.com"+res[22]+" class='body-link' target='_blank'>"+res[3]+"</a><p class='body'>" + res[23] + "</p></div></ul>" 
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[4]+"</p></div><div class='jcontent'><a href=http://"+res[4]+".avestia.com"+res[24]+" class='body-link' target='_blank'>"+res[5]+"</a><p class='body'>" + res[25] + "</p></div></ul>" 
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[6]+"</p></div><div class='jcontent'><a href=http://"+res[6]+".avestia.com"+res[26]+" class='body-link' target='_blank'>"+res[7]+"</a><p class='body'>" + res[27] + "</p></div></ul>" 
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[8]+"</p></div><div class='jcontent'><a href=http://"+res[8]+".avestia.com"+res[28]+" class='body-link' target='_blank'>"+res[9]+"</a><p class='body'>" + res[29] + "</p></div></ul>" 
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[10]+"</p></div><div class='jcontent'><a href=http://"+res[10]+".avestia.com"+res[30]+" class='body-link' target='_blank'>"+res[11]+"</a><p class='body'>" + res[31] + "</p></div></ul>" 
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[12]+"</p></div><div class='jcontent'><a href=http://"+res[12]+".avestia.com"+res[32]+" class='body-link' target='_blank'>"+res[13]+"</a><p class='body'>" + res[33] + "</p></div></ul>" 
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[14]+"</p></div><div class='jcontent'><a href=http://"+res[14]+".avestia.com"+res[34]+" class='body-link' target='_blank'>"+res[15]+"</a><p class='body'>" + res[35] + "</p></div></ul>" 
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[16]+"</p></div><div class='jcontent'><a href=http://"+res[16]+".avestia.com"+res[36]+" class='body-link' target='_blank'>"+res[17]+"</a><p class='body'>" + res[37] + "</p></div></ul>"
+
++ 
+
+"<ul class='jrecent'><div class='jname'><p class='body'>"+res[18]+"</p></div><div class='jcontent'><a href=http://"+res[18]+".avestia.com"+res[38]+" class='body-link' target='_blank'>"+res[19]+"</a><p class='body'>" + res[39] + "</p></div></ul>";
 
     }
   });

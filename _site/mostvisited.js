@@ -22,24 +22,28 @@ loadXMLDoc('mostvisited.txt',function()
     var txt=xmlhttp.responseText;
     
     
-    var res = txt.split('"');
+    var res = txt.split(' - ');
 
-var one = res[0].split(" - ");
+/*var one = res[0].split(" - ");
 var two = res[1].split(" - ");
 var three = res[2].split(" - ");
+var four = res[3].split(" - ");
+var five = res[4].split(" - ");
 
 var authorsOne = res[6];
 var authorsTwo = res[8];
 var authorsThree = res[10];
-
+var authorsFour = res[12];
+var authorsFive = res[14];
+*/
 
 document.getElementById("mostVisited").innerHTML =
-"<a href="+res[5]+" class='body-link'>"+one[0]+"</a><p class='body'>" + 
-authorsOne + "</p>" + 
-"<a href="+res[7]+" class='body-link'>"+two[0]+"</a><p class='body'>" +  
-authorsTwo + "</p>" + 
-"<a href="+res[9]+" class='body-link'>"+three[0]+"</a><p class='body'>" + 
-authorsThree + "</p>";
+"<a href=http://"+res[0]+".avestia.com"+res[6]+" class='body-link' target='_blank'>"+res[1]+"</a><p class='body'>" + 
+res[7] + "</p>" + 
+"<a href=http://"+res[2]+".avestia.com"+res[8]+" class='body-link'  target='_blank'>"+res[3]+"</a><p class='body'>" +  
+res[9] + "</p>" + 
+"<a href=http://"+res[4]+".avestia.com"+res[10]+" class='body-link'  target='_blank'>"+res[5]+"</a><p class='body'>" + 
+res[11] + "</p>";
 
     }
   });
