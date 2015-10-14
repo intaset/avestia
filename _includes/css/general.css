@@ -537,7 +537,7 @@ input.gsc-input {
 input.gsc-input {
     padding: 1px 6px;
     border: 1px solid #FFF!important;
-    width: 100%;
+    width: 100%!important;
 }
 
 .cse input.gsc-search-button, input.gsc-search-button {
