@@ -807,7 +807,7 @@ input.gsc-input {
 input.gsc-input {
     padding: 1px 6px;
     border: 1px solid #FFF!important;
-    width: 99%;
+    width: 100%;
 }
 
 .cse input.gsc-search-button, input.gsc-search-button {
@@ -1168,7 +1168,7 @@ display: none;
 }
 
 .contactform input, .contactform select, .contactform textarea {
-    width: 100%;
+    width: 100%!important;
 }
 
 .contactform .form_button {
@@ -1448,7 +1448,7 @@ h2 {
 /* 1024 PX */
 @media only screen and (min-width: 64em) {
     .contactform input, .contactform select, .contactform textarea {
-    width: 60%;
+    width: 60%!important;
 }
 }
 
