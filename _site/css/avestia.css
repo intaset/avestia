@@ -826,6 +826,8 @@ input.gsc-input {
 @-moz-document url-prefix() {
 .cse input.gsc-search-button, input.gsc-search-button {
     padding: 3px 5px !important;
+    border-radius: 0!important;
+    height: 22px!important;
   }
 }
 
