@@ -254,7 +254,7 @@ mail($my_email,$subject,$message,$headers);
       <p class="body">
         Avestia Publishing,<br>
         International ASET Inc.<br>
-        Unit. 417, 1376 Bank St.<br>
+        Unit 417, 1376 Bank St.<br>
         Ottawa, ON, Canada, K1H 7Y3<br>
         +1 613-695-3040<br>
         <a href="mailto:info@avestia.com" class="body-link">info@avestia.com</a>
