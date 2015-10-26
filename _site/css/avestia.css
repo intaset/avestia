@@ -939,20 +939,24 @@ display: none;
 }
 
 .j-pg h2 {
-  display: inline-block;
-  width: 30%
+  display: block;
 }
 
 .oa {
-  display: inline-block;
-  vertical-align: top;
-  width: 69%;
+  display: block;
+  padding-left: 1em;
 }
 
 .oa-img {
   display: block;
   width: 162px;
   float: right;
+  padding-left: 1em;
+}
+
+.journals .oa {
+  margin: 0;
+  padding: 0;
 }
 
 /* Recent Publications */
@@ -1281,6 +1285,16 @@ footer .grid {
 	body.menu-active div#content {
     	right: 220px;
 	}
+  .j-pg h2 {
+  display: inline-block;
+  width: 30%
+}
+
+.oa {
+  display: inline-block;
+  vertical-align: top;
+  width: 69%;
+}
 }
 
 /* 768 PX */
