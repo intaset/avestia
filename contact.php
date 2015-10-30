@@ -170,7 +170,8 @@ mail($my_email,$subject,$message,$headers);
 </nav>
 
 <div id="content">
-  <div class="cbp-af-header">
+  <div class="desktop">
+<div class="cbp-af-header">
   <div class="cbp-af-inner">
     <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
@@ -185,7 +186,8 @@ mail($my_email,$subject,$message,$headers);
     </div>
 
     <div class="search-menu">
-      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only> <div class="menu-trigger-1"><p class="menu">MENU</p></div>
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
     </div>
 
     <div class="nav">
@@ -198,6 +200,7 @@ mail($my_email,$subject,$message,$headers);
       </nav>
     </div>
   </div>
+</div>
 </div>
 
   <header>
@@ -218,7 +221,9 @@ mail($my_email,$subject,$message,$headers);
     </div> <!-- Mobile -->
   </header>
 
-  <div class="main-content content php">
+  <div class="grid">
+  <div class="main-content content">
+    <div class="unit unit-s-1 unit-m-1 unit-l-1">
    <h2>Contact Avestia Publishing</h2>
    <p class="body">Thank you for your message!</p>
    <p class="body">We have received your message and will get back to you within the next 48 hours.</p>
@@ -233,7 +238,12 @@ mail($my_email,$subject,$message,$headers);
     <p class="body">&nbsp;</p>
     <p class="body">&nbsp;</p>
     <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
+    <p class="body">&nbsp;</p>
   </div>
+</div>
+</div>
 
   <footer>
 <div class="grid">

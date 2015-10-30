@@ -155,7 +155,8 @@ else
     </div>
 
     <div class="search-menu">
-      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only> <div class="menu-trigger-1"><p class="menu">MENU</p></div>
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
     </div>
 
     <div class="nav">
@@ -179,7 +180,7 @@ else
           <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
       </div>
       <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
-          <div class="menu-trigger"><p class="menu">MENU</p></div>
+          <div class="menu-trigger"></div>
       </div>
   </div>
 </div>
@@ -189,7 +190,9 @@ else
     </div> <!-- Mobile -->
   </header>
 
+  <div class="grid">
   <div class="main-content content">
+    <div class="unit unit-s-1 unit-m-1 unit-l-1">
    <h3>Incorrect File Upload</h3>
    <p class="body">Please note that the copyright form must be either a PDF or image file (.jpg, .png) for a successful submission.</p>
 
@@ -208,6 +211,8 @@ else
       <p class="body">&nbsp;</p>
       <p class="body">&nbsp;</p>
   </div>
+</div>
+</div>
 
   <footer>
 <div class="grid">
@@ -433,7 +438,8 @@ mail($author_email,$author_subject,$message,$author_headers);
     </div>
 
     <div class="search-menu">
-      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only> <div class="menu-trigger-1"><p class="menu">MENU</p></div>
+      <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
+      <gcse:searchbox-only resultsUrl="results"></gcse:searchbox-only>
     </div>
 
     <div class="nav">
@@ -467,7 +473,9 @@ mail($author_email,$author_subject,$message,$author_headers);
     </div> <!-- Mobile -->
   </header>
 
+<div class="grid">
   <div class="main-content content">
+    <div class="unit unit-s-1 unit-m-1 unit-l-1">
    <h3>Thank you for submitting your copyright.</h3>
    <p class="body">If you haven't already done so, please send us your manuscript in an MSWORD (doc or docx) format.</p>
 
@@ -490,6 +498,8 @@ mail($author_email,$author_subject,$message,$author_headers);
       <p class="body">&nbsp;</p>
       <p class="body">&nbsp;</p>
   </div>
+</div>
+</div>
 
   <footer>
 <div class="grid">
