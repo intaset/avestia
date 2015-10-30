@@ -99,12 +99,12 @@ else
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="css/avestia.css" rel="stylesheet">
+<link href="../css/avestia.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
 <!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<script src="js/modernizr.custom.63321.js"></script>
+<script src="../js/modernizr.custom.63321.js"></script>
 <script>
   (function() {
     var cx = '016656741306535874023:f_iiykae6ri';
@@ -123,18 +123,18 @@ else
 <nav id="slide-menu">
   <h1>Avestia Publishing</h1>
   <ul>
-    <li><a href="about">About Us</a></li>
-    <li><a href="ethics">Ethics in Publishing</a></li>
-    <li><a href="openaccess">Open Access</a></li>
-    <li><a href="editor">Become a Reviewer or an Editor</a></li>
-    <li><a href="publishing">Your Publishing Needs</a></li>
-    <li><a href="proceedings">Conference Proceedings</a></li>
-    <li><a href="news">Latest News</a></li>
-    <li><a href="guidelines">Author Guidelines</a></li>
-    <li><a href="journals">Journals</a></li>
+    <li><a href="../about">About Us</a></li>
+    <li><a href="../ethics">Ethics in Publishing</a></li>
+    <li><a href="../openaccess">Open Access</a></li>
+    <li><a href="../editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="../publishing">Your Publishing Needs</a></li>
+    <li><a href="../proceedings">Conference Proceedings</a></li>
+    <li><a href="../news">Latest News</a></li>
+    <li><a href="../guidelines">Author Guidelines</a></li>
+    <li><a href="../journals">Journals</a></li>
     <li><a href="http://amss.avestia.com/">Submission</a></li>
-    <li><a href="copyright">Copyright</a></li>
-    <li><a href="contact">Contact Us</a></li>
+    <li><a href="../copyright">Copyright</a></li>
+    <li><a href="../contact">Contact Us</a></li>
   </ul>
 </nav>
 
@@ -142,15 +142,15 @@ else
   <div class="desktop">
     <div class="cbp-af-header">
   <div class="cbp-af-inner">
-    <a href="/"><img src="img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
     <div class="nav1">
       <nav>
         <a href="/">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
-        <a href="journals">Journals</a>
-        <a href="ethics">Ethics in Publishing</a>
-        <a href="guidelines">Author Guidelines</a>
+        <a href="../journals">Journals</a>
+        <a href="../ethics">Ethics in Publishing</a>
+        <a href="../guidelines">Author Guidelines</a>
       </nav>
     </div>
 
@@ -162,9 +162,9 @@ else
       <nav>
         <a href="/">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
-        <a href="journals">Journals</a>
-        <a href="ethics">Ethics in Publishing</a>
-        <a href="guidelines">Author Guidelines</a>
+        <a href="../journals">Journals</a>
+        <a href="../ethics">Ethics in Publishing</a>
+        <a href="../guidelines">Author Guidelines</a>
       </nav>
     </div>
   </div>
@@ -176,7 +176,7 @@ else
       <div class="cbp-af-header">
   <div class="cbp-af-inner">
     <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
-          <a href="/"><img src="img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
       </div>
       <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
           <div class="menu-trigger"><p class="menu">MENU</p></div>
@@ -215,10 +215,10 @@ else
     <div class="unit-spacer">
       <ul class="footer-links">
         <li><a href="/" class="body-link">Avestia Publishing</a></li>
-        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><a href="../journals" class="body-link">Journals</a></li>
         <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
-        <li><a href="terms" class="body-link">Terms of Use</a></li>
-        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+        <li><a href="../terms" class="body-link">Terms of Use</a></li>
+        <li><a href="../sitemap" class="body-link">Sitemap</a></li>
       </ul>
     </div>
   </div>
@@ -241,25 +241,25 @@ else
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
-          <img src="img/fb.png" border="0" onmouseover="this.src='img/fb-hover.png'" onmouseout="this.src='img/fb.png'">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
-          <img src="img/twitter.png" border="0" onmouseover="this.src='img/twitter-hover.png'" onmouseout="this.src='img/twitter.png'">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
-          <img src="img/linkedin.png" border="0" onmouseover="this.src='img/linkedin-hover.png'" onmouseout="this.src='img/linkedin.png'">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
-          <img src="img/google.png" border="0" onmouseover="this.src='img/google-hover.png'" onmouseout="this.src='img/google.png'">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
         </a>
       </div>
 
@@ -273,22 +273,22 @@ else
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/SpryValidationSelect.js" type="text/javascript"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationTextField.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationConfirm.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationCheckbox.js" type="text/javascript"></script>
-    <script src="js/SpryValidationTextarea.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
 
-<script src="js/classie.js"></script>
-<script src="js/jquery.easing.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
-<script defer src="js/demo.js"></script>
-<script defer src="js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="css/animate.min.css"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script defer src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
 
 <script type="text/javascript">
 <!--
@@ -377,12 +377,12 @@ mail($author_email,$author_subject,$message,$author_headers);
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="css/avestia.css" rel="stylesheet">
+<link href="../css/avestia.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic|Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
-<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="../img/icon.ico" type="image/x-icon">
 <!--[if IE-9]><html lang="en" class="ie9"><![endif]-->
 
-<script src="js/modernizr.custom.63321.js"></script>
+<script src="../js/modernizr.custom.63321.js"></script>
 <script>
   (function() {
     var cx = '016656741306535874023:f_iiykae6ri';
@@ -401,18 +401,18 @@ mail($author_email,$author_subject,$message,$author_headers);
 <nav id="slide-menu">
   <h1>Avestia Publishing</h1>
   <ul>
-    <li><a href="about">About Us</a></li>
-    <li><a href="ethics">Ethics in Publishing</a></li>
-    <li><a href="openaccess">Open Access</a></li>
-    <li><a href="editor">Become a Reviewer or an Editor</a></li>
-    <li><a href="publishing">Your Publishing Needs</a></li>
-    <li><a href="proceedings">Conference Proceedings</a></li>
-    <li><a href="news">Latest News</a></li>
-    <li><a href="guidelines">Author Guidelines</a></li>
-    <li><a href="journals">Journals</a></li>
+    <li><a href="../about">About Us</a></li>
+    <li><a href="../ethics">Ethics in Publishing</a></li>
+    <li><a href="../openaccess">Open Access</a></li>
+    <li><a href="../editor">Become a Reviewer or an Editor</a></li>
+    <li><a href="../publishing">Your Publishing Needs</a></li>
+    <li><a href="../proceedings">Conference Proceedings</a></li>
+    <li><a href="../news">Latest News</a></li>
+    <li><a href="../guidelines">Author Guidelines</a></li>
+    <li><a href="../journals">Journals</a></li>
     <li><a href="http://amss.avestia.com/">Submission</a></li>
-    <li><a href="copyright">Copyright</a></li>
-    <li><a href="contact">Contact Us</a></li>
+    <li><a href="../copyright">Copyright</a></li>
+    <li><a href="../contact">Contact Us</a></li>
   </ul>
 </nav>
 
@@ -420,15 +420,15 @@ mail($author_email,$author_subject,$message,$author_headers);
   <div class="desktop">
       <div class="cbp-af-header">
   <div class="cbp-af-inner">
-    <a href="/"><img src="img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
 
     <div class="nav1">
       <nav>
         <a href="/">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
-        <a href="journals">Journals</a>
-        <a href="ethics">Ethics in Publishing</a>
-        <a href="guidelines">Author Guidelines</a>
+        <a href="../journals">Journals</a>
+        <a href="../ethics">Ethics in Publishing</a>
+        <a href="../guidelines">Author Guidelines</a>
       </nav>
     </div>
 
@@ -440,9 +440,9 @@ mail($author_email,$author_subject,$message,$author_headers);
       <nav>
         <a href="/">Home</a>
         <a href="http://amss.avestia.com/">Submission</a>
-        <a href="journals">Journals</a>
-        <a href="ethics">Ethics in Publishing</a>
-        <a href="guidelines">Author Guidelines</a>
+        <a href="../journals">Journals</a>
+        <a href="../ethics">Ethics in Publishing</a>
+        <a href="../guidelines">Author Guidelines</a>
       </nav>
     </div>
   </div>
@@ -454,7 +454,7 @@ mail($author_email,$author_subject,$message,$author_headers);
       <div class="cbp-af-header">
   <div class="cbp-af-inner">
     <div class="unit unit-s-3-4 unit-m-1-3 unit-l-1-3">
-          <a href="/"><img src="img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+          <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
       </div>
       <div class="unit unit-s-1-3 unit-m-2-3 unit-m-2-3-1 unit-l-2-3">
           <div class="menu-trigger"><p class="menu">MENU</p></div>
@@ -497,10 +497,10 @@ mail($author_email,$author_subject,$message,$author_headers);
     <div class="unit-spacer">
       <ul class="footer-links">
         <li><a href="/" class="body-link">Avestia Publishing</a></li>
-        <li><a href="journals" class="body-link">Journals</a></li>
+        <li><a href="../journals" class="body-link">Journals</a></li>
         <li><script>var refURL = window.location.protocol + "//" + window.location.host + window.location.pathname; document.write('<a href="http://international-aset.com/feedback/?refURL=' + refURL+'">Feedback</a>');</script></li>
-        <li><a href="terms" class="body-link">Terms of Use</a></li>
-        <li><a href="sitemap" class="body-link">Sitemap</a></li>
+        <li><a href="../terms" class="body-link">Terms of Use</a></li>
+        <li><a href="../sitemap" class="body-link">Sitemap</a></li>
       </ul>
     </div>
   </div>
@@ -523,25 +523,25 @@ mail($author_email,$author_subject,$message,$author_headers);
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://www.facebook.com/pages/International-Academy-of-Science-Engineering-and-Technology/207827708283" target="blank" title="International ASET Inc. Facebook Page">
-          <img src="img/fb.png" border="0" onmouseover="this.src='img/fb-hover.png'" onmouseout="this.src='img/fb.png'">
+          <img src="../img/fb.png" border="0" onmouseover="this.src='../img/fb-hover.png'" onmouseout="this.src='../img/fb.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://twitter.com/ASET_INC" target="blank" title="International ASET Inc. Twitter">
-          <img src="img/twitter.png" border="0" onmouseover="this.src='img/twitter-hover.png'" onmouseout="this.src='img/twitter.png'">
+          <img src="../img/twitter.png" border="0" onmouseover="this.src='../img/twitter-hover.png'" onmouseout="this.src='../img/twitter.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://www.linkedin.com/company/1169039" target="blank" title="International ASET Inc. LinkedIn">
-          <img src="img/linkedin.png" border="0" onmouseover="this.src='img/linkedin-hover.png'" onmouseout="this.src='img/linkedin.png'">
+          <img src="../img/linkedin.png" border="0" onmouseover="this.src='../img/linkedin-hover.png'" onmouseout="this.src='../img/linkedin.png'">
         </a>
       </div>
 
       <div class="unit unit-s-1-1 unit-m-1-1 unit-l-1-1">
         <a href="https://plus.google.com/u/0/+International-aset/posts" target="blank" title="International ASET Inc. Google+ Page">
-          <img src="img/google.png" border="0" onmouseover="this.src='img/google-hover.png'" onmouseout="this.src='img/google.png'">
+          <img src="../img/google.png" border="0" onmouseover="this.src='../img/google-hover.png'" onmouseout="this.src='../img/google.png'">
         </a>
       </div>
 
@@ -555,23 +555,23 @@ mail($author_email,$author_subject,$message,$author_headers);
 
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script src="js/jquery.nicescroll.min.js"></script>
-    <script src="js/cbpAnimatedHeader.min.js"></script>
-    <script src="js/SpryValidationSelect.js" type="text/javascript"></script>
+  <script src="../js/jquery.nicescroll.min.js"></script>
+    <script src="../js/cbpAnimatedHeader.min.js"></script>
+    <script src="../js/SpryValidationSelect.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationTextField.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextField.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationConfirm.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationConfirm.js" type="text/javascript"></script>
 
-    <script src="js/SpryValidationCheckbox.js" type="text/javascript"></script>
-    <script src="js/SpryValidationTextarea.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationCheckbox.js" type="text/javascript"></script>
+    <script src="../js/SpryValidationTextarea.js" type="text/javascript"></script>
 
-<script src="js/classie.js"></script>
-<script src="js/jquery.easing.js"></script>
-<script src="js/jquery.mousewheel.js"></script>
-<script defer src="js/demo.js"></script>
-<script defer src="js/jquery.flexslider.js"></script>
-<script type="text/javascript" src="css/animate.min.css"></script>
+<script src="../js/classie.js"></script>
+<script src="../js/jquery.easing.js"></script>
+<script src="../js/jquery.mousewheel.js"></script>
+<script defer src="../js/demo.js"></script>
+<script defer src="../js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="../css/animate.min.css"></script>
 
 <script type="text/javascript">
 <!--
