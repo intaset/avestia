@@ -21,7 +21,7 @@
 .unit-spacer {
   padding: 8px;
 }
-@media only screen and (max-width: 47.99em) {
+@media only screen and (max-width: 48em) {
   .unit-s-hidden {
     display: none;
     visibility: hidden;
@@ -82,7 +82,7 @@
     width: 11%;
   }*/
 }
-@media only screen and (min-width: 64em) and (max-width: 60em) {
+@media only screen and (min-width: 48em) and (max-width: 64em) {
   .unit-m-hidden {
     display: none;
     visibility: hidden;
@@ -118,6 +118,41 @@
     width: 11%;
   }*/
 }
+@media only screen and (min-width: 48em) and (max-width: 64em) {
+  .unit-m-4-0 {
+    width: 40%;
+  }
+  .unit-m-3-5 {
+    width: 35%;
+  }
+
+}
+@media only screen and (min-width: 64em) and (max-width: 75em) {
+  .unit-l-1-6 {
+    width: 26%;
+  }
+}
+@media only screen and (min-width: 75em) {
+  .unit-l-1-7 {
+    width: 17%;
+  }
+  .unit-l-5-1 {
+    width: 51%;
+  }
+  .unit-l-3-2 {
+    width: 32%;
+  }
+}
+
+@media only screen and (min-width: 100em) {
+  .unit-l-1-7 {
+    width: 14%;
+  }
+  .unit-l-5-1 {
+    width: 54%;
+  }
+}
+
 @media only screen and (min-width: 64em) {
   .unit-l-hidden {
     display: none;

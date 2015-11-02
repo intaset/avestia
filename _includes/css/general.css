@@ -492,17 +492,16 @@ body.menu-active div#content .menu-trigger-1 { right: 150px; }
 }
 
 .search-menu {
-  width: 70%;
   text-align: right;
   display: inline-block;
-  padding: 12px 0 12px;
+  padding: 12px 10px 12px 0;
+  width: 100%;
 }
 
 /* SEARCH BAR */
 div#___gcse_0 {
     width: 280px;
-    display: inline-block;
-    vertical-align: super;
+    display: inline;
 }
 
 div#___gcse_1 {
@@ -1171,10 +1170,6 @@ h2 {
     padding: 0 1em!important;
   }
 
-  .search-menu {
-  width: 75%;
-  }
-
   .journals div {
     margin: 0 2px;
   }
@@ -1182,10 +1177,6 @@ h2 {
 
 /* 1000 PX */
 @media only screen and (min-width: 62.5em) {
-  .search-menu {
-  width: 78%;
-  }
-
   .journals div {
     margin: 0 2.5px;
   }
@@ -1203,9 +1194,6 @@ h2 {
   .cbp-af-header nav a {
     font-size: 1.1em!important;
   }
-  .search-menu {
-  width: 80%;
-  }
 
   .journals div {
     margin: 3px;
@@ -1216,18 +1204,17 @@ h2 {
 @media only screen and (min-width: 75em) {
   .nav1 {
     display: inline-block;
-    width: 51%;
     line-height: 0px;
     padding: 69px 0;
     vertical-align: top;
   }
-
-  .search-menu {
-    width: 30%;
-    text-align: right;
-    padding: 12px 0;
-  }
-
+div#___gcse_0 {
+    width: 280px;
+    display: inline-block;
+}
+.search-menu {
+  padding: 15px 10px 15px 0;
+}
   .nav {
     display: none;
   }
@@ -1265,9 +1252,6 @@ h2 {
     font-size: 1.1em!important;
 }
 
-.search-menu {
-    width: 32%;
-}
 .journals div {
     margin: 4.2px;
 }
@@ -1275,17 +1259,8 @@ h2 {
 
 /* 1600 PX */
 @media only screen and (min-width: 100em){
-  .search-menu {
-    width: 34%;
-  }
+
   .journals div {
     margin: 4.5px;
 }
-}
-
-/* 1800 PX */
-@media only screen and (min-width: 112em){
-  .search-menu {
-    width: 36%;
-  }
 }

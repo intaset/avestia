@@ -141,9 +141,12 @@ else
 <div id="content">
   <div class="desktop">
     <div class="cbp-af-header">
-  <div class="cbp-af-inner">
-    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+  <div class="cbp-af-inner grid">
+    <div class="unit unit-s-1-4 unit-m-1-4 unit-l-1-7">
+      <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+    </div>
 
+    <div class="unit unit-s-1-2 unit-m-4-0 unit-l-5-1">
     <div class="nav1">
       <nav>
         <a href="/">Home</a>
@@ -153,12 +156,16 @@ else
         <a href="../guidelines">Author Guidelines</a>
       </nav>
     </div>
+    </div>
 
+    <div class="unit unit-s-3-4 unit-m-3-5 unit-l-1-6 unit-l-3-2">
     <div class="search-menu">
       <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
       <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
     </div>
+    </div>
 
+    <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <div class="nav">
       <nav>
         <a href="/">Home</a>
@@ -167,6 +174,7 @@ else
         <a href="../ethics">Ethics in Publishing</a>
         <a href="../guidelines">Author Guidelines</a>
       </nav>
+    </div>
     </div>
   </div>
 </div>
@@ -424,9 +432,12 @@ mail($author_email,$author_subject,$message,$author_headers);
 <div id="content">
   <div class="desktop">
       <div class="cbp-af-header">
-  <div class="cbp-af-inner">
-    <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+  <div class="cbp-af-inner grid">
+    <div class="unit unit-s-1-4 unit-m-1-4 unit-l-1-7">
+      <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
+    </div>
 
+    <div class="unit unit-s-1-2 unit-m-4-0 unit-l-5-1">
     <div class="nav1">
       <nav>
         <a href="/">Home</a>
@@ -436,12 +447,16 @@ mail($author_email,$author_subject,$message,$author_headers);
         <a href="../guidelines">Author Guidelines</a>
       </nav>
     </div>
+    </div>
 
+    <div class="unit unit-s-3-4 unit-m-3-5 unit-l-1-6 unit-l-3-2">
     <div class="search-menu">
       <div class="menu-trigger-1"><p class="menu">MENU</p></div><br>
       <gcse:searchbox-only resultsUrl="../results"></gcse:searchbox-only>
     </div>
+    </div>
 
+    <div class="unit unit-s-1 unit-m-1 unit-l-1">
     <div class="nav">
       <nav>
         <a href="/">Home</a>
@@ -450,6 +465,7 @@ mail($author_email,$author_subject,$message,$author_headers);
         <a href="../ethics">Ethics in Publishing</a>
         <a href="../guidelines">Author Guidelines</a>
       </nav>
+    </div>
     </div>
   </div>
 </div>
