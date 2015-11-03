@@ -501,7 +501,8 @@ body.menu-active div#content .menu-trigger-1 { right: 150px; }
 /* SEARCH BAR */
 div#___gcse_0 {
     width: 280px;
-    display: inline;
+    display: block;
+    float: right;
 }
 
 div#___gcse_1 {
