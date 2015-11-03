@@ -140,9 +140,9 @@ else
 
 <div id="content">
   <div class="desktop">
-    <div class="cbp-af-header">
+<div class="cbp-af-header">
   <div class="cbp-af-inner grid">
-    <div class="unit unit-s-1-4 unit-m-1-4 unit-l-1-7">
+    <div class="unit unit-s-2-8 unit-m-2-8 unit-l-1-7">
       <a href="/"><img src="../img/logo.svg" class="flex-logo" alt="Avestia Publishing"></a>
     </div>
 
