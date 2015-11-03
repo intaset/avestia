@@ -1042,10 +1042,6 @@ footer .grid {
     max-width: 300px;
   }
 
-  #slide-menu a {
-    font-size: 1em;
-  }
-
   body.menu-active div#content {
     right: 300px;
   }
