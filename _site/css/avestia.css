@@ -1033,6 +1033,10 @@ display: none;
 }
 
 /* CONF Proceedings */
+.proceedings {
+  height: 3160px;
+}
+
 .tabs input[type=radio] {
     position: absolute;
     top: -9999px;
@@ -1041,7 +1045,7 @@ display: none;
 .tabs {
   list-style: none;
   position: relative;
-  padding: 0;
+  padding: 0em;
 }
 .tabs li{
   float: left;
@@ -1084,6 +1088,7 @@ display: none;
   position: absolute;
   left: 0;
   text-align: center;
+      top: 80px;
   -webkit-animation-duration: 0.5s;
   -o-animation-duration: 0.5s;
   -moz-animation-duration: 0.5s;
@@ -1429,6 +1434,12 @@ footer {
 h2 {
   font-size: 1.5em;
   }
+  .proceedings {
+    height: 1260px;
+}
+.tab-content {
+    top: inherit;
+}
 }
 
 /* 881 PX */
