@@ -1170,6 +1170,12 @@ h2 {
 .tab-content {
     top: inherit;
 }
+    .contactform input, .contactform select, .contactform textarea {
+    width: 485px!important;
+}
+.contactform .form_button {
+    width: 240px!important;
+    }
 }
 
 /* 881 PX */
@@ -1193,8 +1199,11 @@ h2 {
 /* 1024 PX */
 @media only screen and (min-width: 64em) {
     .contactform input, .contactform select, .contactform textarea {
-    width: 60%!important;
+    width: 485px!important;
 }
+.contactform .form_button {
+    width: 240px!important;
+    }
 }
 
 /* 1100 PX */
