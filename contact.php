@@ -230,25 +230,12 @@ mail($my_email,$subject,$message,$headers);
   </header>
 
   <div class="grid">
-  <div class="main-content content">
+  <div class="main-content content height">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
    <h2>Contact Avestia Publishing</h2>
    <p class="body">Thank you for your message!</p>
    <p class="body">We have received your message and will get back to you within the next 48 hours.</p>
 
-   <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
-    <p class="body">&nbsp;</p>
   </div>
 </div>
 </div>

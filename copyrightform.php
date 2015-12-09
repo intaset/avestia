@@ -199,25 +199,11 @@ else
   </header>
 
   <div class="grid">
-  <div class="main-content content">
+  <div class="main-content content height">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
    <h3>Incorrect File Upload</h3>
    <p class="body">Please note that the copyright form must be either a PDF or image file (.jpg, .png) for a successful submission.</p>
 
-   <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
   </div>
 </div>
 </div>
@@ -490,7 +476,7 @@ mail($author_email,$author_subject,$message,$author_headers);
   </header>
 
 <div class="grid">
-  <div class="main-content content">
+  <div class="main-content content height">
     <div class="unit unit-s-1 unit-m-1 unit-l-1">
    <h3>Thank you for submitting your copyright.</h3>
    <p class="body">If you haven't already done so, please send us your manuscript in an MSWORD (doc or docx) format.</p>
@@ -499,20 +485,6 @@ mail($author_email,$author_subject,$message,$author_headers);
 	Sincerely,<br>
 	Avestia Publishing</p>
 
-  <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
-      <p class="body">&nbsp;</p>
   </div>
 </div>
 </div>

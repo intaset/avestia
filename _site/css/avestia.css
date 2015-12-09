@@ -912,6 +912,7 @@ display: none;
 /* JOURNALS */
 .journals h2 {
     text-align: left;
+        padding: 12px 0!important;
 }
 
 .journals h2:before {
@@ -957,7 +958,7 @@ display: none;
 
 .journals .oa {
   margin: 0;
-  padding: 0;
+  padding: 0 0 1em 0;
 }
 
 /* Recent Publications */
@@ -1316,6 +1317,10 @@ footer .grid {
 	.mobile {
 		display: none;
 	}
+
+  .height {
+    height: 910px;
+}
 
   nav#slide-menu {
     right: -300px;
