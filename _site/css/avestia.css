@@ -1322,6 +1322,10 @@ footer .grid {
     height: 910px;
 }
 
+.j-height {
+    height: 1000px;
+}
+
   nav#slide-menu {
     right: -300px;
     max-width: 300px;
